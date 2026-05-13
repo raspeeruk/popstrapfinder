@@ -17,6 +17,7 @@ export const colorways: Colorway[] = [
     imageBackup:
       "https://cdn.shopify.com/s/files/1/0278/9723/3501/files/sc01_26_Bioceramic_Royal_Pop_HUIT_BLANC_PUB_DOUBLE_3-4_1.jpg",
     swatchUrl: "https://www.swatch.com/en-en/huit-blanc-ssx03w100n/SSX03W100N.html",
+    swatchAffiliateUrl: "https://sovrn.co/9wnla03",
     pairsWith: ["leather", "metal", "nato", "rubber"],
     recommendedMaterials: ["Italian black leather", "Brushed steel mesh", "Rainbow-stripe NATO"],
     keywordAliases: ["white royal pop strap", "huit blanc strap", "rainbow royal pop strap"],

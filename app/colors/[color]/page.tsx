@@ -116,12 +116,14 @@ export default async function ColorPage({
                 See our picks ↓
               </Link>
               <a
-                href={c.swatchUrl}
+                href={c.swatchAffiliateUrl ?? c.swatchUrl}
                 target="_blank"
-                rel="noopener noreferrer nofollow"
+                rel="noopener sponsored nofollow"
+                data-track="swatch-cta"
+                data-colorway={c.slug}
                 className={`popbox-tight px-6 py-4 font-display text-lg uppercase ${isLightCase ? "bg-paper text-ink" : "bg-ink text-paper"}`}
               >
-                Swatch product page ↗
+                Buy at Swatch ↗
               </a>
             </div>
           </div>

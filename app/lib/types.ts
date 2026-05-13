@@ -34,6 +34,8 @@ export interface Colorway {
   imageUrl: string;
   imageBackup?: string;
   swatchUrl: string;
+  /** Sovrn affiliate redirect to the Swatch product page (preferred CTA). */
+  swatchAffiliateUrl?: string;
   pairsWith: StrapCategorySlug[];
   recommendedMaterials: string[];
   keywordAliases: string[];
