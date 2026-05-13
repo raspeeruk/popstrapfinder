@@ -13,10 +13,9 @@ export const colorways: Colorway[] = [
     popClass: "bg-pop-white",
     description:
       "French for 'eight white' — the most photographed of the lineup. White Bioceramic case, white dial, and rainbow hour-marker dashes that read as a direct quote of the 1980s Pop Swatch language.",
-    imageUrl:
-      "https://cdn.shopify.com/s/files/1/0278/9723/3501/files/sc01_26_Bioceramic_Royal_Pop_HUIT_BLANC_PUB_DOUBLE_3-4_1.jpg",
+    imageUrl: "/images/colorways/huit-blanc.jpg",
     imageBackup:
-      "https://cdn.shopify.com/s/files/1/0278/9723/3501/files/sc01_26_Bioceramic_Royal_Pop_HUIT_BLANC_Close-up_CLIP_2.jpg",
+      "https://cdn.shopify.com/s/files/1/0278/9723/3501/files/sc01_26_Bioceramic_Royal_Pop_HUIT_BLANC_PUB_DOUBLE_3-4_1.jpg",
     swatchUrl: "https://www.swatch.com/en-en/huit-blanc-ssx03w100n/SSX03W100N.html",
     pairsWith: ["leather", "metal", "nato", "rubber"],
     recommendedMaterials: ["Italian black leather", "Brushed steel mesh", "Rainbow-stripe NATO"],
@@ -34,10 +33,9 @@ export const colorways: Colorway[] = [
     popClass: "bg-pop-pink",
     description:
       "Italian for 'eight red'. Light pink Bioceramic case with poppy-red bezel accents and a bright red dial. The most romantic of the eight — and the one collectors are calling the sleeper.",
-    imageUrl:
-      "https://cdn.shopify.com/s/files/1/0278/9723/3501/files/sc01_26_Bioceramic_Royal_Pop_OTTO_ROSSO_Close-up_DIAL_1_1.jpg",
+    imageUrl: "/images/colorways/otto-rosso.jpg",
     imageBackup:
-      "https://watchesbysjx.com/wp-content/uploads/2026/05/Swatch-Audemars-Piguet-Royal-Pop-1.jpg",
+      "https://cdn.shopify.com/s/files/1/0278/9723/3501/files/sc01_26_Bioceramic_Royal_Pop_OTTO_ROSSO_Close-up_DIAL_1_1.jpg",
     swatchUrl: "https://www.swatch.com/en-us/otto-rosso-ssx03r100n/SSX03R100N.html",
     pairsWith: ["leather", "rubber", "metal", "chain"],
     recommendedMaterials: ["Blush nappa leather", "Oxblood Italian leather", "Rose-gold milanese"],
@@ -55,10 +53,9 @@ export const colorways: Colorway[] = [
     popClass: "bg-pop-green",
     description:
       "Lime-green Bioceramic case with a deeper 'Royal Oak Olive' dial. The closest of the eight to a classic AP Royal Oak palette — a wearable, low-shout option among louder siblings.",
-    imageUrl:
-      "https://cdn.shopify.com/s/files/1/0278/9723/3501/files/sc01_26_Bioceramic_Royal_Pop_GREEN_EIGHT_3-4_Front.jpg",
+    imageUrl: "/images/colorways/green-eight.jpg",
     imageBackup:
-      "https://watchesbysjx.com/wp-content/uploads/2026/05/Swatch-Audemars-Piguet-Royal-Pop-3.jpg",
+      "https://cdn.shopify.com/s/files/1/0278/9723/3501/files/sc01_26_Bioceramic_Royal_Pop_GREEN_EIGHT_3-4_Front.jpg",
     swatchUrl: "https://www.swatch.com/en-us/green-eight-ssx03g100n/SSX03G100N.html",
     pairsWith: ["leather", "nato", "rubber"],
     recommendedMaterials: ["Cognac leather", "Olive suede", "Khaki NATO"],
@@ -76,10 +73,9 @@ export const colorways: Colorway[] = [
     popClass: "bg-pop-green",
     description:
       "German for 'blue eight'. Lime-green Bioceramic case, light-blue dial, and Super-LumiNova-heavy hands and indices that make this the lume-bomb of the lineup — built for low-light photography.",
-    imageUrl:
-      "https://cdn.shopify.com/s/files/1/0278/9723/3501/files/sc01_26_Bioceramic_Royal_Pop_BLAUE_ACHT_Close-up_DIAL.jpg",
+    imageUrl: "/images/colorways/blaue-acht.jpg",
     imageBackup:
-      "https://watchesbysjx.com/wp-content/uploads/2026/05/Swatch-Audemars-Piguet-Royal-Pop-5.jpg",
+      "https://cdn.shopify.com/s/files/1/0278/9723/3501/files/sc01_26_Bioceramic_Royal_Pop_BLAUE_ACHT_Close-up_DIAL.jpg",
     swatchUrl: "https://www.swatch.com/en-us/blaue-acht-ssx03l101n/SSX03L101N.html",
     pairsWith: ["rubber", "nato", "leather"],
     recommendedMaterials: ["Lume-green FKM", "Royal blue NATO", "Tan leather"],
@@ -97,10 +93,9 @@ export const colorways: Colorway[] = [
     popClass: "bg-pop-navy",
     description:
       "Japanese for 'orange eight'. Midnight-blue Bioceramic case with a bright orange dial and matching minute hand — the most racing-spec of the lineup, and the one men reach for who don't want pastels.",
-    imageUrl:
-      "https://cdn.shopify.com/s/files/1/0278/9723/3501/files/sc01_26_Bioceramic_Royal_Pop_ORENJI_HACHI_3-4_Front_1.jpg",
+    imageUrl: "/images/colorways/orenji-hachi.jpg",
     imageBackup:
-      "https://watchesbysjx.com/wp-content/uploads/2026/05/Swatch-Audemars-Piguet-Royal-Pop-6.jpg",
+      "https://cdn.shopify.com/s/files/1/0278/9723/3501/files/sc01_26_Bioceramic_Royal_Pop_ORENJI_HACHI_3-4_Front_1.jpg",
     swatchUrl: "https://www.swatch.com/en-us/orenji-hachi-ssx03l103n/SSX03L103N.html",
     pairsWith: ["rubber", "leather", "metal", "nato"],
     recommendedMaterials: ["Orange FKM", "Black leather", "Gunmetal mesh"],
@@ -118,10 +113,9 @@ export const colorways: Colorway[] = [
     popClass: "bg-pop-sky",
     description:
       "Mandarin for 'blue eight'. Light-blue Bioceramic case with a mid-blue dial and tonal blue lanyard — the most 'Royal Oak Frosted Blue' of the lineup. The connoisseur favorite.",
-    imageUrl:
-      "https://cdn.shopify.com/s/files/1/0278/9723/3501/files/sc01_26_Bioceramic_Royal_Pop_LAN_BA_PUB_DOUBLE_3-4_var_1.jpg",
+    imageUrl: "/images/colorways/lan-ba.jpg",
     imageBackup:
-      "https://watchesbysjx.com/wp-content/uploads/2026/05/Swatch-Audemars-Piguet-Royal-Pop-7.jpg",
+      "https://cdn.shopify.com/s/files/1/0278/9723/3501/files/sc01_26_Bioceramic_Royal_Pop_LAN_BA_PUB_DOUBLE_3-4_var_1.jpg",
     swatchUrl: "https://www.swatch.com/en-us/lan-ba-ssx03l100n/SSX03L100N.html",
     pairsWith: ["rubber", "nato", "leather", "metal"],
     recommendedMaterials: ["White FKM", "Sand suede", "Brushed silver mesh"],
@@ -139,10 +133,9 @@ export const colorways: Colorway[] = [
     popClass: "bg-pop-white",
     description:
       "Spanish for 'eight black'. White Bioceramic case with a stark black dial and small seconds at six — the tuxedo / panda of the lineup. The only Savonnette without a colored case, and the most formal-wear-ready option.",
-    imageUrl:
-      "https://cdn.shopify.com/s/files/1/0278/9723/3501/files/sc01_26_Bioceramic_Royal_Pop_OCHO_NEGRO_3-4_Front_1.jpg",
+    imageUrl: "/images/colorways/ocho-negro.jpg",
     imageBackup:
-      "https://watchesbysjx.com/wp-content/uploads/2026/05/Swatch-Audemars-Piguet-Royal-Pop-9.jpg",
+      "https://cdn.shopify.com/s/files/1/0278/9723/3501/files/sc01_26_Bioceramic_Royal_Pop_OCHO_NEGRO_3-4_Front_1.jpg",
     swatchUrl: "https://www.swatch.com/en-us/ocho-negro-ssx03w101n/SSX03W101N.html",
     pairsWith: ["leather", "metal", "chain"],
     recommendedMaterials: ["Black alligator leather", "Polished steel jubilee", "Albert chain"],
@@ -160,10 +153,9 @@ export const colorways: Colorway[] = [
     popClass: "bg-pop-pink",
     description:
       "The Memphis / Pop-Art statement piece. Light-pink and turquoise Bioceramic case with fuchsia, yellow and turquoise dial details — the most 1980s of the lineup, the most divisive, and the one most likely to show up in Hypebeast fashion shoots.",
-    imageUrl:
-      "https://watchesbysjx.com/wp-content/uploads/2026/05/Swatch-Audemars-Piguet-Royal-Pop-2-2.jpg",
+    imageUrl: "/images/colorways/otg-roz.jpg",
     imageBackup:
-      "https://cdn.shopify.com/s/files/1/0278/9723/3501/files/sc01_26_Bioceramic_Royal_Pop_OTG_ROZ_3-4_Front_1.jpg",
+      "https://watchesbysjx.com/wp-content/uploads/2026/05/Swatch-Audemars-Piguet-Royal-Pop-2-2.jpg",
     swatchUrl: "https://www.swatch.com/en-us/otg-roz-ssx03j100n/SSX03J100N.html",
     pairsWith: ["rubber", "leather", "nato", "chain"],
     recommendedMaterials: ["Yellow FKM", "Turquoise leather", "Pink paracord"],
