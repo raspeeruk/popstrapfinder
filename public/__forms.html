@@ -1,0 +1,17 @@
+<!doctype html>
+<html>
+  <head><title>Forms</title></head>
+  <body>
+    <!--
+      Static form for Netlify's HTML post-processor to detect at build time.
+      The real form on /contact submits via JS fetch to "/" with form-name=contact.
+    -->
+    <form name="contact" data-netlify="true" netlify-honeypot="bot-field" hidden>
+      <input type="text" name="name" />
+      <input type="email" name="email" />
+      <input type="text" name="subject" />
+      <textarea name="message"></textarea>
+      <input type="text" name="bot-field" />
+    </form>
+  </body>
+</html>
