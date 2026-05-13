@@ -15,6 +15,8 @@ const nextConfig: NextConfig = {
       { protocol: "https", hostname: "**.fratellowatches.com" },
       { protocol: "https", hostname: "**.hodinkee.com" },
       { protocol: "https", hostname: "**.worldtempus.com" },
+      { protocol: "https", hostname: "**.watchesbysjx.com" },
+      { protocol: "https", hostname: "watchesbysjx.com" },
     ],
   },
 };

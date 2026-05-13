@@ -161,9 +161,9 @@ export const colorways: Colorway[] = [
     description:
       "The Memphis / Pop-Art statement piece. Light-pink and turquoise Bioceramic case with fuchsia, yellow and turquoise dial details — the most 1980s of the lineup, the most divisive, and the one most likely to show up in Hypebeast fashion shoots.",
     imageUrl:
-      "https://cdn.shopify.com/s/files/1/0278/9723/3501/files/sc01_26_Bioceramic_Royal_Pop_OTG_ROZ_3-4_Front_1.jpg",
-    imageBackup:
       "https://watchesbysjx.com/wp-content/uploads/2026/05/Swatch-Audemars-Piguet-Royal-Pop-2-2.jpg",
+    imageBackup:
+      "https://cdn.shopify.com/s/files/1/0278/9723/3501/files/sc01_26_Bioceramic_Royal_Pop_OTG_ROZ_3-4_Front_1.jpg",
     swatchUrl: "https://www.swatch.com/en-us/otg-roz-ssx03j100n/SSX03J100N.html",
     pairsWith: ["rubber", "leather", "nato", "chain"],
     recommendedMaterials: ["Yellow FKM", "Turquoise leather", "Pink paracord"],
