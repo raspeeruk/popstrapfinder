@@ -16,7 +16,7 @@ export default function StrapCategoryCard({ c }: { c: StrapCategory }) {
   return (
     <Link
       href={`/straps/${c.slug}`}
-      className="group block popbox p-0 overflow-hidden"
+      className="group block popbox bg-paper p-0 overflow-hidden"
       aria-label={c.title}
     >
       <div className={`relative ${accent[c.slug]} p-6 min-h-[140px]`}>

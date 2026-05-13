@@ -52,56 +52,58 @@
   }
 }
 
-.halftone {
-  background-image: radial-gradient(circle, var(--color-ink) 1.2px, transparent 1.5px);
-  background-size: 8px 8px;
-}
-.halftone-dense {
-  background-image: radial-gradient(circle, var(--color-ink) 1.8px, transparent 2px);
-  background-size: 6px 6px;
-}
-.halftone-light {
-  background-image: radial-gradient(circle, var(--color-ink) 0.8px, transparent 1px);
-  background-size: 10px 10px;
-}
+@layer components {
+  .halftone {
+    background-image: radial-gradient(circle, var(--color-ink) 1.2px, transparent 1.5px);
+    background-size: 8px 8px;
+  }
+  .halftone-dense {
+    background-image: radial-gradient(circle, var(--color-ink) 1.8px, transparent 2px);
+    background-size: 6px 6px;
+  }
+  .halftone-light {
+    background-image: radial-gradient(circle, var(--color-ink) 0.8px, transparent 1px);
+    background-size: 10px 10px;
+  }
 
-.octa {
-  clip-path: polygon(
-    25% 0%, 75% 0%, 100% 25%, 100% 75%,
-    75% 100%, 25% 100%, 0% 75%, 0% 25%
-  );
-}
+  .octa {
+    clip-path: polygon(
+      25% 0%, 75% 0%, 100% 25%, 100% 75%,
+      75% 100%, 25% 100%, 0% 75%, 0% 25%
+    );
+  }
 
-.popbox {
-  border: 3px solid var(--color-ink);
-  box-shadow: 6px 6px 0 var(--color-ink);
-  background: var(--color-pop-white);
-  transition: transform 120ms ease, box-shadow 120ms ease;
-}
-.popbox:hover {
-  transform: translate(-2px, -2px);
-  box-shadow: 8px 8px 0 var(--color-ink);
-}
-.popbox-tight {
-  border: 2px solid var(--color-ink);
-  box-shadow: 4px 4px 0 var(--color-ink);
-  background: var(--color-pop-white);
-}
+  /* popbox/popbox-tight: structural only — no background.
+     Use a Tailwind bg-* utility on each element (bg-paper, bg-ink, bg-pop-red, etc.). */
+  .popbox {
+    border: 3px solid var(--color-ink);
+    box-shadow: 6px 6px 0 var(--color-ink);
+    transition: transform 120ms ease, box-shadow 120ms ease;
+  }
+  .popbox:hover {
+    transform: translate(-2px, -2px);
+    box-shadow: 8px 8px 0 var(--color-ink);
+  }
+  .popbox-tight {
+    border: 2px solid var(--color-ink);
+    box-shadow: 4px 4px 0 var(--color-ink);
+  }
 
-.slash-banner {
-  background: repeating-linear-gradient(
-    -45deg,
-    var(--color-ink) 0 12px,
-    var(--color-pop-yellow) 12px 24px
-  );
-}
+  .slash-banner {
+    background: repeating-linear-gradient(
+      -45deg,
+      var(--color-ink) 0 12px,
+      var(--color-pop-yellow) 12px 24px
+    );
+  }
 
-.burst {
-  clip-path: polygon(
-    50% 0%, 60% 15%, 75% 10%, 80% 25%, 95% 25%,
-    90% 45%, 100% 55%, 88% 70%, 95% 85%, 75% 85%,
-    70% 100%, 50% 88%, 30% 100%, 25% 85%, 5% 85%,
-    12% 70%, 0% 55%, 10% 45%, 5% 25%, 20% 25%,
-    25% 10%, 40% 15%
-  );
+  .burst {
+    clip-path: polygon(
+      50% 0%, 60% 15%, 75% 10%, 80% 25%, 95% 25%,
+      90% 45%, 100% 55%, 88% 70%, 95% 85%, 75% 85%,
+      70% 100%, 50% 88%, 30% 100%, 25% 85%, 5% 85%,
+      12% 70%, 0% 55%, 10% 45%, 5% 25%, 20% 25%,
+      25% 10%, 40% 15%
+    );
+  }
 }

@@ -11,7 +11,7 @@ const typeBadge: Record<NewsItem["type"], { label: string; cls: string }> = {
 export default function NewsCard({ item }: { item: NewsItem }) {
   const b = typeBadge[item.type];
   return (
-    <article className="popbox-tight p-5">
+    <article className="popbox-tight bg-paper p-5">
       <div className="flex items-center gap-2">
         <span className={`px-2 py-0.5 font-mono text-[10px] font-bold uppercase tracking-widest ${b.cls}`}>
           {b.label}

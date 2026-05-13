@@ -131,7 +131,7 @@ export default async function StrapCategoryPage({
               <Link
                 key={cw.slug}
                 href={`/colors/${cw.slug}`}
-                className="popbox-tight overflow-hidden p-0"
+                className="popbox-tight bg-paper overflow-hidden p-0"
               >
                 <div
                   className="halftone-light relative aspect-square"

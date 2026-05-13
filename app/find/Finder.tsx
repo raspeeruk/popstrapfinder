@@ -111,7 +111,7 @@ export default function Finder() {
                   setTimeout(next, 200);
                 }}
                 aria-pressed={colorway === c.slug}
-                className={`popbox-tight overflow-hidden p-0 text-left ${colorway === c.slug ? "ring-4 ring-pop-yellow" : ""}`}
+                className={`popbox-tight bg-paper overflow-hidden p-0 text-left ${colorway === c.slug ? "ring-4 ring-pop-yellow" : ""}`}
               >
                 <div
                   className="relative aspect-square halftone-light"

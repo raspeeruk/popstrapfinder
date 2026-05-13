@@ -38,7 +38,7 @@ export default function Nav() {
         </nav>
         <Link
           href="/find"
-          className="popbox-tight px-3 py-2 text-sm font-bold uppercase tracking-wide hover:bg-pop-yellow md:px-4 md:py-2.5"
+          className="popbox-tight bg-pop-yellow text-ink px-3 py-2 text-sm font-bold uppercase tracking-wide hover:bg-pop-red hover:text-paper md:px-4 md:py-2.5"
         >
           Find my strap →
         </Link>

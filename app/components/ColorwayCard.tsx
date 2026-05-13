@@ -12,7 +12,7 @@ export default function ColorwayCard({ c, size = "md" }: { c: Colorway; size?: "
   return (
     <Link
       href={`/colors/${c.slug}`}
-      className="group block popbox p-0 overflow-hidden"
+      className="group block popbox bg-paper p-0 overflow-hidden"
       aria-label={`Straps for the Royal Pop ${c.name}`}
     >
       <div className={`relative ${isLg ? "aspect-[4/5]" : "aspect-square"}`}>

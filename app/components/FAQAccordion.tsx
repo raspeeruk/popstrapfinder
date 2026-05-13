@@ -6,7 +6,7 @@ export default function FAQAccordion({ faqs }: { faqs: FAQ[] }) {
       {faqs.map((f, i) => (
         <details
           key={i}
-          className="popbox-tight group p-0 [&_summary::-webkit-details-marker]:hidden"
+          className="popbox-tight bg-paper group p-0 [&_summary::-webkit-details-marker]:hidden"
         >
           <summary className="flex cursor-pointer items-center justify-between gap-4 px-5 py-4 font-display text-lg leading-tight">
             <span>{f.q}</span>
