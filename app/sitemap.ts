@@ -13,6 +13,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "/find",
     "/colors",
     "/straps",
+    "/originals",
     "/specs",
     "/news",
     "/faq",
@@ -29,7 +30,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
     url: `${BASE}${p}`,
     lastModified: now,
     changeFrequency: (p === "" ? "weekly" : "monthly") as "weekly" | "monthly",
-    priority: p === "" ? 1.0 : p === "/find" || p === "/colors" || p === "/straps" ? 0.9 : 0.7,
+    priority:
+      p === ""
+        ? 1.0
+        : p === "/find" || p === "/colors" || p === "/straps" || p === "/originals"
+          ? 0.9
+          : 0.7,
   }));
 
   const colorwayEntries = colorways.map((c) => ({

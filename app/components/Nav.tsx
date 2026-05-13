@@ -4,6 +4,7 @@ const NAV = [
   { href: "/colors", label: "Colorways" },
   { href: "/straps", label: "Straps" },
   { href: "/find", label: "Find" },
+  { href: "/originals", label: "Originals" },
   { href: "/news", label: "News" },
   { href: "/specs", label: "Watch Specs" },
 ];

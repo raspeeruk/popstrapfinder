@@ -3,14 +3,20 @@
   <head><title>Forms</title></head>
   <body>
     <!--
-      Static form for Netlify's HTML post-processor to detect at build time.
-      The real form on /contact submits via JS fetch to "/" with form-name=contact.
+      Static forms for Netlify's HTML post-processor to detect at build time.
+      Real forms submit via JS fetch to "/" with the matching form-name.
     -->
     <form name="contact" data-netlify="true" netlify-honeypot="bot-field" hidden>
       <input type="text" name="name" />
       <input type="email" name="email" />
       <input type="text" name="subject" />
       <textarea name="message"></textarea>
+      <input type="text" name="bot-field" />
+    </form>
+    <form name="originals-waitlist" data-netlify="true" netlify-honeypot="bot-field" hidden>
+      <input type="email" name="email" />
+      <input type="text" name="favorite_colorway" />
+      <input type="text" name="strap_preference" />
       <input type="text" name="bot-field" />
     </form>
   </body>
