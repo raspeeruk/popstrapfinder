@@ -122,6 +122,13 @@ export default function Home() {
           </div>
         </div>
 
+        {/* Waitlist CTA — right under hero */}
+        <div className="border-t-[3px] border-ink bg-bone">
+          <div className="mx-auto max-w-5xl px-4 py-10 sm:px-6 lg:px-8">
+            <WaitlistBanner source="home-hero" />
+          </div>
+        </div>
+
         {/* Marquee colorway strip */}
         <div className="border-t-[3px] border-ink bg-ink overflow-hidden">
           <div className="flex divide-x-[3px] divide-paper/20">
@@ -214,13 +221,6 @@ export default function Home() {
               </div>
             ))}
           </div>
-        </div>
-      </section>
-
-      {/* WAITLIST CTA */}
-      <section className="border-b-[3px] border-ink bg-bone py-16">
-        <div className="mx-auto max-w-5xl px-4 sm:px-6 lg:px-8">
-          <WaitlistBanner source="home" />
         </div>
       </section>
 

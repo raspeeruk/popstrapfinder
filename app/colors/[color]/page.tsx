@@ -154,6 +154,19 @@ export default async function ColorPage({
         </div>
       </section>
 
+      {/* WAITLIST CTA — right under hero, colorway-specific */}
+      <section className="border-b-[3px] border-ink bg-bone py-10">
+        <div className="mx-auto max-w-5xl px-4 sm:px-6 lg:px-8">
+          <WaitlistBanner
+            source={`colorway-${c.slug}`}
+            favoriteColorway={c.slug}
+            eyebrow={`For the ${c.name}`}
+            title={`We're designing straps for the ${c.name}. Vote with your waitlist entry.`}
+            variant="compact"
+          />
+        </div>
+      </section>
+
       {/* RECOMMENDED MATERIALS */}
       <section id="picks" className="border-b-[3px] border-ink py-20">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
@@ -181,18 +194,6 @@ export default async function ColorPage({
               ))}
             </div>
           </div>
-        </div>
-      </section>
-
-      {/* WAITLIST CTA — colorway-specific */}
-      <section className="border-b-[3px] border-ink py-16">
-        <div className="mx-auto max-w-5xl px-4 sm:px-6 lg:px-8">
-          <WaitlistBanner
-            source={`colorway-${c.slug}`}
-            favoriteColorway={c.slug}
-            eyebrow={`For the ${c.name}`}
-            title={`We're designing straps for the ${c.name}. Tell us which one to make.`}
-          />
         </div>
       </section>
 

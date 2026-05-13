@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Link from "next/link";
 import { Bowlby_One_SC, DM_Sans, JetBrains_Mono } from "next/font/google";
 import Script from "next/script";
 import Nav from "./components/Nav";
@@ -121,6 +122,17 @@ export default function RootLayout({
         >
           Skip to content
         </a>
+        <Link
+          href="/originals"
+          className="block bg-ink text-pop-yellow hover:bg-pop-red hover:text-paper border-b-[3px] border-ink"
+        >
+          <div className="mx-auto flex max-w-7xl items-center justify-center gap-2 px-4 py-2 text-center sm:px-6 lg:px-8">
+            <span className="font-mono text-[10px] sm:text-xs font-bold uppercase tracking-widest">
+              We&apos;re making our own straps — let me know when they&apos;re released
+            </span>
+            <span aria-hidden className="font-mono text-[10px] sm:text-xs font-bold">→</span>
+          </div>
+        </Link>
         <Nav />
         <main id="main" className="flex-1">
           {children}

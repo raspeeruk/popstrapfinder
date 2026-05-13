@@ -120,6 +120,18 @@ export default async function StrapCategoryPage({
         </div>
       </section>
 
+      {/* WAITLIST CTA — right under hero */}
+      <section className="border-b-[3px] border-ink py-10">
+        <div className="mx-auto max-w-5xl px-4 sm:px-6 lg:px-8">
+          <WaitlistBanner
+            source={`strap-${c.slug}`}
+            eyebrow="Making our own"
+            title={`We're designing ${c.title.toLowerCase()} for the Royal Pop too. Vote with your waitlist entry.`}
+            variant="compact"
+          />
+        </div>
+      </section>
+
       {/* MATCHING COLORWAYS */}
       <section className="border-b-[3px] border-ink bg-bone py-16">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
@@ -147,17 +159,6 @@ export default async function StrapCategoryPage({
               </Link>
             ))}
           </div>
-        </div>
-      </section>
-
-      {/* WAITLIST CTA — strap-category-specific */}
-      <section className="border-b-[3px] border-ink py-16">
-        <div className="mx-auto max-w-5xl px-4 sm:px-6 lg:px-8">
-          <WaitlistBanner
-            source={`strap-${c.slug}`}
-            eyebrow="Making our own"
-            title={`We're designing ${c.title.toLowerCase()} for the Royal Pop too. Want first dibs?`}
-          />
         </div>
       </section>
 
