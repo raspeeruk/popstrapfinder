@@ -12,6 +12,7 @@ import Breadcrumbs from "../../components/Breadcrumbs";
 import NewsCard from "../../components/NewsCard";
 import FAQAccordion from "../../components/FAQAccordion";
 import StrapCategoryCard from "../../components/StrapCategoryCard";
+import WaitlistBanner from "../../components/WaitlistBanner";
 import { faqJsonLd } from "../../lib/schema";
 import { isLightHex } from "../../lib/color";
 import type { ColorwaySlug } from "../../lib/types";
@@ -180,6 +181,18 @@ export default async function ColorPage({
               ))}
             </div>
           </div>
+        </div>
+      </section>
+
+      {/* WAITLIST CTA — colorway-specific */}
+      <section className="border-b-[3px] border-ink py-16">
+        <div className="mx-auto max-w-5xl px-4 sm:px-6 lg:px-8">
+          <WaitlistBanner
+            source={`colorway-${c.slug}`}
+            favoriteColorway={c.slug}
+            eyebrow={`For the ${c.name}`}
+            title={`We're designing straps for the ${c.name}. Tell us which one to make.`}
+          />
         </div>
       </section>
 

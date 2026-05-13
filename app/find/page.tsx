@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Finder from "./Finder";
 import SectionHeading from "../components/SectionHeading";
 import Breadcrumbs from "../components/Breadcrumbs";
+import WaitlistBanner from "../components/WaitlistBanner";
 
 export const metadata: Metadata = {
   title: "Strap Finder — Match the Right Strap to Your Royal Pop",
@@ -28,6 +29,17 @@ export default function FindPage() {
           <div className="mt-10">
             <Finder />
           </div>
+        </div>
+      </section>
+
+      {/* WAITLIST CTA */}
+      <section className="border-b-[3px] border-ink bg-bone py-16">
+        <div className="mx-auto max-w-5xl px-4 sm:px-6 lg:px-8">
+          <WaitlistBanner
+            source="find"
+            eyebrow="Or wait for ours"
+            title="We're designing our own straps too. Vote with your waitlist entry."
+          />
         </div>
       </section>
     </>

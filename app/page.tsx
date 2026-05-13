@@ -9,6 +9,7 @@ import StrapCategoryCard from "./components/StrapCategoryCard";
 import NewsCard from "./components/NewsCard";
 import FAQAccordion from "./components/FAQAccordion";
 import SectionHeading from "./components/SectionHeading";
+import WaitlistBanner from "./components/WaitlistBanner";
 import { faqJsonLd } from "./lib/schema";
 import { isLightHex } from "./lib/color";
 
@@ -213,6 +214,13 @@ export default function Home() {
               </div>
             ))}
           </div>
+        </div>
+      </section>
+
+      {/* WAITLIST CTA */}
+      <section className="border-b-[3px] border-ink bg-bone py-16">
+        <div className="mx-auto max-w-5xl px-4 sm:px-6 lg:px-8">
+          <WaitlistBanner source="home" />
         </div>
       </section>
 

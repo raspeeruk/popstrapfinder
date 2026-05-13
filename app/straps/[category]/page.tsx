@@ -8,6 +8,7 @@ import { generalFaqs, compatibilityFaqs } from "../../data/faqs";
 import SectionHeading from "../../components/SectionHeading";
 import Breadcrumbs from "../../components/Breadcrumbs";
 import FAQAccordion from "../../components/FAQAccordion";
+import WaitlistBanner from "../../components/WaitlistBanner";
 import { faqJsonLd } from "../../lib/schema";
 import { isLightHex } from "../../lib/color";
 import type { StrapCategorySlug } from "../../lib/types";
@@ -146,6 +147,17 @@ export default async function StrapCategoryPage({
               </Link>
             ))}
           </div>
+        </div>
+      </section>
+
+      {/* WAITLIST CTA — strap-category-specific */}
+      <section className="border-b-[3px] border-ink py-16">
+        <div className="mx-auto max-w-5xl px-4 sm:px-6 lg:px-8">
+          <WaitlistBanner
+            source={`strap-${c.slug}`}
+            eyebrow="Making our own"
+            title={`We're designing ${c.title.toLowerCase()} for the Royal Pop too. Want first dibs?`}
+          />
         </div>
       </section>
 
