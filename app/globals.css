@@ -73,6 +73,19 @@
     );
   }
 
+  .hex {
+    clip-path: polygon(
+      50% 0%, 100% 25%, 100% 75%,
+      50% 100%, 0% 75%, 0% 25%
+    );
+  }
+  .hex-flat {
+    clip-path: polygon(
+      25% 0%, 75% 0%, 100% 50%,
+      75% 100%, 25% 100%, 0% 50%
+    );
+  }
+
   /* popbox/popbox-tight: structural only — no background.
      Use a Tailwind bg-* utility on each element (bg-paper, bg-ink, bg-pop-red, etc.). */
   .popbox {

@@ -75,52 +75,47 @@ export default function Home() {
             </dl>
           </div>
 
-          {/* Hero visual — octagonal frame stack */}
+          {/* Hero visual — nested hexagon layers, each in a colorway with halftone dots */}
           <div className="md:col-span-5">
-            <div className="relative mx-auto max-w-md">
-              <div className="absolute -inset-4 bg-pop-pink octa halftone-light" aria-hidden />
-              <div className="relative octa bg-pop-yellow p-6">
-                <div className="octa bg-pop-white p-2 popbox-tight">
-                  <div className="octa relative aspect-square bg-pop-sky">
-                    {/* Stylised watch face built in CSS */}
-                    <div className="absolute inset-[12%] octa bg-pop-navy" aria-hidden />
-                    <div className="absolute inset-[20%] octa bg-pop-white" aria-hidden />
-                    <div className="absolute inset-[28%] octa bg-pop-red flex items-center justify-center" aria-hidden>
-                      <span className="font-display text-pop-white text-3xl rotate-[-12deg]">POP</span>
-                    </div>
-                    {/* hour markers */}
-                    {Array.from({ length: 8 }).map((_, i) => (
-                      <span
-                        key={i}
-                        aria-hidden
-                        className="absolute left-1/2 top-1/2 h-1.5 w-1.5 -translate-x-1/2 -translate-y-1/2 rounded-full bg-ink"
-                        style={{
-                          transform: `translate(-50%, -50%) rotate(${i * 45}deg) translateY(-92px)`,
-                        }}
-                      />
-                    ))}
-                    {/* hands */}
-                    <span
-                      aria-hidden
-                      className="absolute left-1/2 top-1/2 h-[28%] w-1.5 origin-bottom -translate-x-1/2 -translate-y-full bg-ink"
-                      style={{ transform: "translate(-50%, -100%) rotate(40deg)" }}
-                    />
-                    <span
-                      aria-hidden
-                      className="absolute left-1/2 top-1/2 h-[36%] w-1 origin-bottom -translate-x-1/2 -translate-y-full bg-pop-yellow"
-                      style={{ transform: "translate(-50%, -100%) rotate(115deg)" }}
-                    />
-                    <span
-                      aria-hidden
-                      className="absolute left-1/2 top-1/2 h-2 w-2 -translate-x-1/2 -translate-y-1/2 rounded-full bg-pop-red ring-2 ring-ink"
-                    />
-                  </div>
+            <div className="relative mx-auto aspect-square max-w-md">
+              {/* Layer 1 (outermost): Pink */}
+              <div className="absolute inset-0">
+                <div className="hex relative h-full w-full" style={{ background: "#FF4D8F" }}>
+                  <div className="absolute inset-0 halftone opacity-25 mix-blend-multiply" aria-hidden />
                 </div>
               </div>
-              <div className="absolute -bottom-4 -right-6 burst bg-pop-red px-6 py-8 text-center text-paper font-display">
-                <span className="block text-xs uppercase tracking-widest">As of</span>
-                <span className="block text-2xl">May 19</span>
-                <span className="block text-xs uppercase tracking-widest">2026</span>
+              {/* Layer 2: Yellow */}
+              <div className="absolute inset-[10%]">
+                <div className="hex relative h-full w-full" style={{ background: "#FFC700" }}>
+                  <div className="absolute inset-0 halftone-dense opacity-25 mix-blend-multiply" aria-hidden />
+                </div>
+              </div>
+              {/* Layer 3: Sky */}
+              <div className="absolute inset-[22%]">
+                <div className="hex relative h-full w-full" style={{ background: "#2196F3" }}>
+                  <div className="absolute inset-0 halftone opacity-30 mix-blend-multiply" aria-hidden />
+                </div>
+              </div>
+              {/* Layer 4: Green */}
+              <div className="absolute inset-[33%]">
+                <div className="hex relative h-full w-full" style={{ background: "#00C853" }}>
+                  <div className="absolute inset-0 halftone-light opacity-40 mix-blend-multiply" aria-hidden />
+                </div>
+              </div>
+              {/* Layer 5 (innermost): Red — the watch face */}
+              <div className="absolute inset-[44%]">
+                <div className="hex relative flex h-full w-full items-center justify-center" style={{ background: "#FF1744" }}>
+                  <div className="absolute inset-0 halftone-light opacity-50 mix-blend-multiply" aria-hidden />
+                  <span className="relative font-display text-3xl text-paper drop-shadow-[2px_2px_0_rgba(0,0,0,0.4)] rotate-[-8deg]">
+                    POP
+                  </span>
+                </div>
+              </div>
+              {/* Floating "Just launched" badge */}
+              <div className="absolute -bottom-2 -right-4 burst bg-ink px-6 py-7 text-center text-pop-yellow font-display sm:-bottom-4 sm:-right-6">
+                <span className="block text-xs uppercase tracking-widest">Just</span>
+                <span className="block text-2xl leading-none">Live</span>
+                <span className="block text-xs uppercase tracking-widest">May 16</span>
               </div>
             </div>
           </div>
