@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 180 180">
+  <rect width="180" height="180" fill="#0A0A0A"/>
+  <polygon points="90,12 158,46 168,114 134,164 46,164 12,114 22,46" fill="#FFC700"/>
+  <polygon points="90,30 142,57 150,114 122,150 58,150 30,114 38,57" fill="#FF1744"/>
+  <circle cx="90" cy="90" r="28" fill="#FAFAFA"/>
+  <text x="90" y="103" font-family="Impact, sans-serif" font-size="38" font-weight="900" text-anchor="middle" fill="#0A0A0A">P</text>
+</svg>
