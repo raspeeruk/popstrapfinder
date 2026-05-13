@@ -38,6 +38,7 @@ export const colorways: Colorway[] = [
     imageBackup:
       "https://cdn.shopify.com/s/files/1/0278/9723/3501/files/sc01_26_Bioceramic_Royal_Pop_OTTO_ROSSO_Close-up_DIAL_1_1.jpg",
     swatchUrl: "https://www.swatch.com/en-us/otto-rosso-ssx03r100n/SSX03R100N.html",
+    swatchAffiliateUrl: "https://sovrn.co/h8t7n5l",
     pairsWith: ["leather", "rubber", "metal", "chain"],
     recommendedMaterials: ["Blush nappa leather", "Oxblood Italian leather", "Rose-gold milanese"],
     keywordAliases: ["otto rosso strap", "pink royal pop strap", "red royal pop strap"],
@@ -58,6 +59,7 @@ export const colorways: Colorway[] = [
     imageBackup:
       "https://cdn.shopify.com/s/files/1/0278/9723/3501/files/sc01_26_Bioceramic_Royal_Pop_GREEN_EIGHT_3-4_Front.jpg",
     swatchUrl: "https://www.swatch.com/en-us/green-eight-ssx03g100n/SSX03G100N.html",
+    swatchAffiliateUrl: "https://sovrn.co/1bxp1yu",
     pairsWith: ["leather", "nato", "rubber"],
     recommendedMaterials: ["Cognac leather", "Olive suede", "Khaki NATO"],
     keywordAliases: ["green eight strap", "green royal pop strap", "olive royal pop strap"],
@@ -78,6 +80,7 @@ export const colorways: Colorway[] = [
     imageBackup:
       "https://cdn.shopify.com/s/files/1/0278/9723/3501/files/sc01_26_Bioceramic_Royal_Pop_BLAUE_ACHT_Close-up_DIAL.jpg",
     swatchUrl: "https://www.swatch.com/en-us/blaue-acht-ssx03l101n/SSX03L101N.html",
+    swatchAffiliateUrl: "https://sovrn.co/stnnpo4",
     pairsWith: ["rubber", "nato", "leather"],
     recommendedMaterials: ["Lume-green FKM", "Royal blue NATO", "Tan leather"],
     keywordAliases: ["blaue acht strap", "lime royal pop strap", "lume royal pop strap"],
@@ -98,6 +101,7 @@ export const colorways: Colorway[] = [
     imageBackup:
       "https://cdn.shopify.com/s/files/1/0278/9723/3501/files/sc01_26_Bioceramic_Royal_Pop_ORENJI_HACHI_3-4_Front_1.jpg",
     swatchUrl: "https://www.swatch.com/en-us/orenji-hachi-ssx03l103n/SSX03L103N.html",
+    swatchAffiliateUrl: "https://sovrn.co/11pejt6",
     pairsWith: ["rubber", "leather", "metal", "nato"],
     recommendedMaterials: ["Orange FKM", "Black leather", "Gunmetal mesh"],
     keywordAliases: ["orenji hachi strap", "orange royal pop strap", "navy royal pop strap"],
@@ -118,6 +122,7 @@ export const colorways: Colorway[] = [
     imageBackup:
       "https://cdn.shopify.com/s/files/1/0278/9723/3501/files/sc01_26_Bioceramic_Royal_Pop_LAN_BA_PUB_DOUBLE_3-4_var_1.jpg",
     swatchUrl: "https://www.swatch.com/en-us/lan-ba-ssx03l100n/SSX03L100N.html",
+    swatchAffiliateUrl: "https://sovrn.co/ga4c8df",
     pairsWith: ["rubber", "nato", "leather", "metal"],
     recommendedMaterials: ["White FKM", "Sand suede", "Brushed silver mesh"],
     keywordAliases: ["lan ba strap", "light blue royal pop strap", "blue royal pop strap"],
@@ -138,6 +143,7 @@ export const colorways: Colorway[] = [
     imageBackup:
       "https://cdn.shopify.com/s/files/1/0278/9723/3501/files/sc01_26_Bioceramic_Royal_Pop_OCHO_NEGRO_3-4_Front_1.jpg",
     swatchUrl: "https://www.swatch.com/en-us/ocho-negro-ssx03w101n/SSX03W101N.html",
+    swatchAffiliateUrl: "https://sovrn.co/x7eggvd",
     pairsWith: ["leather", "metal", "chain"],
     recommendedMaterials: ["Black alligator leather", "Polished steel jubilee", "Albert chain"],
     keywordAliases: ["ocho negro strap", "black royal pop strap", "panda royal pop strap"],
@@ -158,6 +164,7 @@ export const colorways: Colorway[] = [
     imageBackup:
       "https://watchesbysjx.com/wp-content/uploads/2026/05/Swatch-Audemars-Piguet-Royal-Pop-2-2.jpg",
     swatchUrl: "https://www.swatch.com/en-us/otg-roz-ssx03j100n/SSX03J100N.html",
+    swatchAffiliateUrl: "https://sovrn.co/u18ryoi",
     pairsWith: ["rubber", "leather", "nato", "chain"],
     recommendedMaterials: ["Yellow FKM", "Turquoise leather", "Pink paracord"],
     keywordAliases: ["otg roz strap", "yellow royal pop strap", "memphis royal pop strap", "pink yellow royal pop strap"],
