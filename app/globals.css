@@ -53,6 +53,11 @@
 }
 
 @layer components {
+  .halftone, .halftone-dense, .halftone-light {
+    /* Decorative overlays — never interactive. Prevents invisible aria-hidden
+       layers from swallowing clicks on the form/CTA elements beneath. */
+    pointer-events: none;
+  }
   .halftone {
     background-image: radial-gradient(circle, var(--color-ink) 1.2px, transparent 1.5px);
     background-size: 8px 8px;
