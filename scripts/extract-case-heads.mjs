@@ -29,7 +29,7 @@ const ROOT = path.resolve(__dirname, "..");
 const COLORWAY_DIR = path.join(ROOT, "public", "images", "colorways");
 const OUT_DIR = path.join(ROOT, "public", "images", "case-heads");
 
-const MODEL = "gemini-2.5-flash-image";
+const MODEL = "nano-banana-pro-preview";
 
 const WRISTBUDDYS = {
   "huit-blanc": "https://wristbuddys.com/cdn/shop/files/RoyalPop-HUIT-BLANC.webp",

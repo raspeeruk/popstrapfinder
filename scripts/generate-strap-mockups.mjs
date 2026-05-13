@@ -39,7 +39,7 @@ const OUT_DIR = path.join(ROOT, "public", "images", "mockups");
 const COLORWAY_DIR = path.join(ROOT, "public", "images", "colorways");
 const CASE_HEAD_DIR = path.join(ROOT, "public", "images", "case-heads");
 
-const MODEL = "gemini-2.5-flash-image";
+const MODEL = "nano-banana-pro-preview";
 
 // Composite parameters — these must match what we tell Gemini about positioning.
 const CANVAS = 1024;
@@ -124,7 +124,8 @@ const STRAP_DESIGNS = {
     designPrompt: [
       "Bioceramic-coated steel frame in matte black wraps the octagonal case.",
       "Standard 22mm spring-bar lugs visible at top and bottom of the frame.",
-      "Attached: a smooth black Italian calfskin leather strap with rainbow contrast thread stitching along both edges (one thread per color: red, orange, yellow, green, blue, purple), echoing the rainbow hour-marker dashes on the dial.",
+      "Attached: a matte-black FKM rubber strap with quadrillage texture — vulcanised rubber, NOT leather.",
+      "Bright rainbow contrast piping running along both long edges of the rubber strap (a thin colored channel: red → orange → yellow → green → blue → purple, distributed along the length), echoing the rainbow hour-marker dashes on the dial.",
       "Brushed stainless-steel pin buckle.",
     ].join(" "),
   },

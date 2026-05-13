@@ -95,9 +95,9 @@ export const originals: StrapOriginal[] = [
     colorwaySlug: "huit-blanc",
     formFactor: "clip",
     strapName: "The Domino",
-    material: "Bioceramic clip + black Italian leather, rainbow stitch",
+    material: "Bioceramic clip + matte-black FKM rubber, rainbow piping",
     pitch:
-      "Bioceramic-coated steel adapter with brushed 22mm lugs. Ships with smooth black calfskin and rainbow contrast thread echoing the dial dashes. Swap in any 22mm strap you own.",
+      "Bioceramic-coated steel adapter with brushed 22mm lugs. Ships with matte-black FKM rubber featuring rainbow contrast piping along both edges — pulled straight off the dial markers. Swap in any 22mm strap you own.",
     strapHex: "#0A0A0A",
     accentHex: "#FF1744",
     estPriceUsd: 129,

@@ -119,16 +119,42 @@ export default function WaitlistForm() {
 
       <div>
         <label
-          htmlFor="strap_preference"
+          htmlFor="strap_type"
           className="block font-mono text-xs font-bold uppercase tracking-widest"
         >
-          What material are you waiting for? (Optional)
+          Which form factor are you voting for?
+        </label>
+        <select
+          id="strap_type"
+          name="strap_type"
+          required
+          className="mt-2 block w-full border-[3px] border-ink bg-paper p-3 font-body text-base outline-none focus:bg-pop-yellow/10"
+        >
+          <option value="">Pick one</option>
+          <option value="snap">The Snap — one-piece moulded rubber, $79</option>
+          <option value="clip">The Clip — adapter + standard 22mm lug, swap any strap, $129</option>
+          <option value="loop">The Loop — octagonal frame + pass-through NATO, $89</option>
+          <option value="multiple">More than one</option>
+          <option value="surprise">Surprise me — make what's best</option>
+        </select>
+        <p className="mt-2 text-xs text-ink/55">
+          We&apos;re committing the first production run to whatever wins the most
+          votes. Pick the one you&apos;d actually buy.
+        </p>
+      </div>
+
+      <div>
+        <label
+          htmlFor="strap_notes"
+          className="block font-mono text-xs font-bold uppercase tracking-widest"
+        >
+          Anything else? (Optional)
         </label>
         <input
-          id="strap_preference"
-          name="strap_preference"
+          id="strap_notes"
+          name="strap_notes"
           type="text"
-          placeholder="e.g. leather, FKM, mesh, chain"
+          placeholder="Color, material, what you'd pay, anything"
           className="mt-2 block w-full border-[3px] border-ink bg-paper p-3 font-body text-base outline-none focus:bg-pop-yellow/10"
         />
       </div>
