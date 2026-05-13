@@ -2,6 +2,8 @@ import type { MetadataRoute } from "next";
 import { colorways } from "./data/colorways";
 import { strapCategories } from "./data/strap-categories";
 
+export const dynamic = "force-static";
+
 const BASE = "https://popstrapfinder.com";
 
 export default function sitemap(): MetadataRoute.Sitemap {
