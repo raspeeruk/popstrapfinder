@@ -1,211 +1,388 @@
 #!/usr/bin/env node
 /**
- * Generate PopStrap Originals mockup images via OpenAI gpt-image-1.
+ * Generate PopStrap Originals mockup images via Google Gemini 2.5 Flash Image
+ * ("Nano Banana"), then composite the press-shot dial back onto the result with
+ * Sharp so the watch face is pixel-identical to the source.
  *
- * Requirements:
- *   - Node 22+ (native fetch)
- *   - OPENAI_API_KEY in env (or rogerson/.env)
+ * Three form factors, distinct prompts:
+ *   - snap: one-piece moulded FKM rubber, octagonal cutout snap-fit
+ *   - clip: Bioceramic-coated steel frame with 22mm spring-bar lugs
+ *   - loop: octagonal anodized frame with pass-through NATO strap
+ *
+ * References fed to Gemini per call:
+ *   - Local dial close-up (public/images/colorways/<slug>.jpg)
+ *   - Form-factor-appropriate community reference (Andrew's screenshots)
+ *   - Per-colorway wristbuddys product photo (fetched at runtime)
+ *
+ * Pixel-perfect dial preservation:
+ *   - Gemini is instructed to centre the watch case with the dial face at
+ *     canvas center, occupying ~25% of the canvas (≈256×256 of a 1024 image).
+ *   - Sharp post-process masks the press-shot dial to a circle, resizes to
+ *     256×256, and composites it over the generated image at (384, 384).
  *
  * Usage:
  *   node scripts/generate-strap-mockups.mjs            # all 8 colorways
  *   node scripts/generate-strap-mockups.mjs huit-blanc # one colorway
  *
- * Output: public/images/mockups/<slug>.png
- *
- * After generation, flip hasMockup=true in app/data/originals.ts for each
- * generated slug so the page renders the image instead of the placeholder.
+ * Requirements: GEMINI_API_KEY in env, Node 22+, sharp installed.
  */
 
 import fs from "node:fs/promises";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
+import sharp from "sharp";
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 const ROOT = path.resolve(__dirname, "..");
 const OUT_DIR = path.join(ROOT, "public", "images", "mockups");
+const COLORWAY_DIR = path.join(ROOT, "public", "images", "colorways");
+const CASE_HEAD_DIR = path.join(ROOT, "public", "images", "case-heads");
 
-// Mirror of app/data/originals.ts — kept inline so this script has zero
-// TypeScript or build dependencies.
-const ORIGINALS = [
-  {
-    slug: "huit-blanc",
-    colorwayName: "Huit Blanc",
-    caseColor: "white",
-    caseLabel: "white Bioceramic with rainbow hour-marker dashes",
+const MODEL = "gemini-2.5-flash-image";
+
+// Composite parameters — these must match what we tell Gemini about positioning.
+const CANVAS = 1024;
+// The pristine case-head cutout will be composited at this size (square),
+// centered horizontally and pulled slightly above center vertically so the
+// strap has more visual space below.
+const CASE_SIZE = 480;
+const CASE_LEFT = Math.round((CANVAS - CASE_SIZE) / 2);
+const CASE_TOP = Math.round((CANVAS - CASE_SIZE) / 2) - 30;
+
+// Community references provided by Andrew. Used at runtime ONLY as
+// form-factor guidance for the model — not stored in the repo, not
+// redistributed. The output is our own composite.
+const REFS_DIR = "/Users/andrewspeer/Downloads/New Folder With Items 2";
+const COMMUNITY_REFS = {
+  snap: [
+    // Screenshot showing the case head visibly snapping into a black rubber adapter
+    path.join(REFS_DIR, "Screenshot_20260513-150637.png"),
+    // White rubber strap with rainbow keepers — Artra concept
+    path.join(REFS_DIR, "Screenshot_20260513-150714.png"),
+  ],
+  clip: [
+    // Blue integrated bracelet concept (apwatchstrap)
+    path.join(REFS_DIR, "Screenshot_20260513-150615.png"),
+    // Full eight-colorway render set (popstrap.original)
+    path.join(REFS_DIR, "Screenshot_20260513-150644.png"),
+  ],
+  loop: [
+    // Snap-fit form factor reference (closest analog for "case in frame")
+    path.join(REFS_DIR, "Screenshot_20260513-150637.png"),
+    path.join(REFS_DIR, "Screenshot_20260513-150644.png"),
+  ],
+};
+
+const WRISTBUDDYS_REFS = {
+  "huit-blanc": "https://wristbuddys.com/cdn/shop/files/RoyalPop-HUIT-BLANC.webp",
+  "otto-rosso": "https://wristbuddys.com/cdn/shop/files/RoyalPop-OTTO-ROSSO.webp",
+  "green-eight": "https://wristbuddys.com/cdn/shop/files/RoyalPopGREEN-EIGHT.webp",
+  "blaue-acht": "https://wristbuddys.com/cdn/shop/files/RoyalPop-BLAUE-ACHT.webp",
+  "orenji-hachi": "https://wristbuddys.com/cdn/shop/files/RoyalPop-ORENJI-HACHI.webp",
+  "lan-ba": "https://wristbuddys.com/cdn/shop/files/RoyalPopLAN-BA.webp",
+  "ocho-negro": "https://wristbuddys.com/cdn/shop/files/RoyalPop-OCHO-NEGRO.webp",
+  "otg-roz": "https://wristbuddys.com/cdn/shop/files/RoyalPopOTG-ROZ.webp",
+};
+
+const FORM_INSTRUCTIONS = {
+  snap: [
+    "FORM FACTOR — 'The Snap': The watch case head snap-fits into a one-piece moulded FKM rubber adapter that wraps the full octagonal perimeter of the case, hugging all 8 sides.",
+    "The adapter and the wrist strap are a single continuous piece of moulded rubber — no separate components.",
+    "A visible seam runs around the perimeter of the case where it sits in the rubber, making it clear the case head is inserted into the rubber, not integrated with it.",
+    "The strap extends top and bottom in one continuous flowing piece.",
+  ].join(" "),
+  clip: [
+    "FORM FACTOR — 'The Clip': The watch case head clicks into a thin Bioceramic-coated steel frame adapter that wraps the octagonal perimeter of the case.",
+    "Two protruding spring-bar lugs are visible at top and bottom of the adapter frame — standard 22mm watch lugs with visible pin/spring bars.",
+    "A separate leather wrist strap is attached to those lugs (this is a removable, interchangeable strap).",
+    "The strap and the adapter frame are clearly TWO SEPARATE PARTS, not one piece.",
+  ].join(" "),
+  loop: [
+    "FORM FACTOR — 'The Loop': The watch case head sits inside a thin octagonal anodized metal frame that wraps the case perimeter.",
+    "A single-piece NATO-style fabric strap passes UNDER the watch case and through both ends of the frame, with the buckle on one end.",
+    "The NATO strap is clearly visible threading through the frame at the top and bottom of the case — like a Marathon or Tudor NATO build.",
+    "The strap and the frame are TWO SEPARATE PARTS — the strap can be pulled out the side without removing the watch from the frame.",
+  ].join(" "),
+};
+
+const COMPOSITION_LOCK = [
+  "COMPOSITION (critical):",
+  `- Canvas is square, 1024×1024.`,
+  `- The watch case occupies a roughly ${CASE_SIZE}×${CASE_SIZE} pixel area centered horizontally at x=512, with its center at y=${CASE_TOP + CASE_SIZE / 2} (slightly above canvas center).`,
+  `- The case looks correct in the position, but I will overlay the pristine watch case head on top of yours — so YOUR drawing of the watch face does not need to be perfect, but the case POSITION must match the description above.`,
+  `- The wrist strap extends from above the watch (top of canvas) and below (bottom of canvas), connecting cleanly to the adapter that wraps the case.`,
+  `- Clean off-white background (#F4F2EE). Soft directional lighting. Subtle drop shadow under the watch+strap.`,
+  `- Editorial product photography. No people, no wrists, no text overlays, no logos other than what's on the watch.`,
+].join("\n");
+
+// Per-colorway strap design (concept + colors + materials)
+const STRAP_DESIGNS = {
+  "huit-blanc": {
+    formFactor: "clip",
     strapName: "The Domino",
-    strapDescription:
-      "jet-black smooth Italian calfskin leather watch strap with rainbow-thread contrast stitching and rainbow keeper loops",
-    accentNotes:
-      "rainbow accents echoing the watch dial markers; stainless steel pin buckle",
+    designPrompt: [
+      "Bioceramic-coated steel frame in matte black wraps the octagonal case.",
+      "Standard 22mm spring-bar lugs visible at top and bottom of the frame.",
+      "Attached: a smooth black Italian calfskin leather strap with rainbow contrast thread stitching along both edges (one thread per color: red, orange, yellow, green, blue, purple), echoing the rainbow hour-marker dashes on the dial.",
+      "Brushed stainless-steel pin buckle.",
+    ].join(" "),
   },
-  {
-    slug: "otto-rosso",
-    colorwayName: "Otto Rosso",
-    caseColor: "light pink",
-    caseLabel: "pale pink Bioceramic with poppy-red bezel accents",
+  "otto-rosso": {
+    formFactor: "clip",
     strapName: "The Confetto",
-    strapDescription:
-      "soft Italian nappa leather watch strap in pale blush pink with bright poppy-red contrast stitching",
-    accentNotes:
-      "rose-gold pin buckle; padded comfort lining; matte finish",
+    designPrompt: [
+      "Bioceramic-coated steel frame in rose-gold tone wraps the octagonal case.",
+      "Standard 22mm spring-bar lugs visible at top and bottom.",
+      "Attached: a soft blush-pink Italian nappa leather strap with poppy-red contrast stitching.",
+      "Rose-gold pin buckle.",
+    ].join(" "),
   },
-  {
-    slug: "green-eight",
-    colorwayName: "Green Eight",
-    caseColor: "lime green",
-    caseLabel: "lime-green Bioceramic with a deep olive 'Royal Oak' dial",
+  "green-eight": {
+    formFactor: "loop",
     strapName: "The Olive Run",
-    strapDescription:
-      "vegetable-tanned cognac saddle leather watch strap with olive-green hand-painted edges, slight grain texture, vintage-style square-stitch",
-    accentNotes:
-      "aged-brass pin buckle; visible craft stitching; will develop patina",
+    designPrompt: [
+      "Octagonal anodized metal frame in aged-brass tone wraps the case.",
+      "An olive-green single-piece twill NATO strap with cognac leather edge trim passes under the watch and threads through the frame at top and bottom.",
+      "Aged-brass pin buckle on one end.",
+    ].join(" "),
   },
-  {
-    slug: "blaue-acht",
-    colorwayName: "Blaue Acht",
-    caseColor: "lime green with light blue dial",
-    caseLabel: "lime-green Bioceramic case with light-blue lume-heavy dial",
+  "blaue-acht": {
+    formFactor: "snap",
     strapName: "The Lumebomb",
-    strapDescription:
-      "lime-green FKM rubber watch strap with subtle glow-charge pigment, fine quadrillage texture, soft matte finish",
-    accentNotes:
-      "blue contrast accent piping along the channel; brushed steel pin buckle",
+    designPrompt: [
+      "One-piece moulded lime-green FKM rubber strap with subtle glow-pigment specks throughout (suggesting Super-LumiNova) and royal-blue contrast piping along both edges.",
+      "Brushed steel pin buckle.",
+    ].join(" "),
   },
-  {
-    slug: "orenji-hachi",
-    colorwayName: "Orenji Hachi",
-    caseColor: "midnight navy with orange dial",
-    caseLabel: "midnight-blue Bioceramic case with bright orange dial",
+  "orenji-hachi": {
+    formFactor: "snap",
     strapName: "The Pit Pass",
-    strapDescription:
-      "safety-orange FKM rubber watch strap with quadrillage rubber texture, matte finish, racing-spec channels along the sides",
-    accentNotes:
-      "matte-black PVD pin buckle and black keeper loops",
+    designPrompt: [
+      "One-piece moulded safety-orange FKM rubber strap with quadrillage texture and racing-spec channels along both edges.",
+      "Matte-black PVD pin buckle and matte-black rubber keeper loops.",
+    ].join(" "),
   },
-  {
-    slug: "lan-ba",
-    colorwayName: "Lan Ba",
-    caseColor: "light blue",
-    caseLabel: "light-blue Bioceramic case with mid-blue 'Frosted Oak' dial",
+  "lan-ba": {
+    formFactor: "snap",
     strapName: "The Frost",
-    strapDescription:
-      "brilliant white FKM rubber watch strap with a frosted micro-texture across the surface, soft satin finish",
-    accentNotes:
-      "brushed stainless steel pin buckle; light-blue contrast stitching along the edge",
+    designPrompt: [
+      "One-piece moulded brilliant-white FKM rubber strap with a frosted micro-texture across the surface (soft satin finish).",
+      "Light-blue contrast piping along both edges.",
+      "Brushed stainless-steel pin buckle.",
+    ].join(" "),
   },
-  {
-    slug: "ocho-negro",
-    colorwayName: "Ocho Negro",
-    caseColor: "white with black dial",
-    caseLabel: "white Bioceramic case with stark black dial and small seconds",
+  "ocho-negro": {
+    formFactor: "clip",
     strapName: "The Tuxedo",
-    strapDescription:
-      "glossy black alligator-grain calfskin leather watch strap with hand-painted black edges and tonal black stitching",
-    accentNotes:
-      "polished stainless steel pin buckle; mirror-shine finish; formal-wear ready",
+    designPrompt: [
+      "Bioceramic-coated steel frame in polished black wraps the octagonal case.",
+      "Standard 22mm spring-bar lugs visible at top and bottom.",
+      "Attached: a glossy black alligator-grain calfskin leather strap with tonal black stitching.",
+      "Polished stainless-steel pin buckle.",
+    ].join(" "),
   },
-  {
-    slug: "otg-roz",
-    colorwayName: "Otg Roz",
-    caseColor: "pink and turquoise",
-    caseLabel: "pink and turquoise Bioceramic case with Memphis-style dial",
+  "otg-roz": {
+    formFactor: "loop",
     strapName: "The Memphis",
-    strapDescription:
-      "bright yellow FKM rubber watch strap with turquoise contrast piping along both edges, pink keeper loops, matte finish",
-    accentNotes:
-      "matte yellow pin buckle; 1980s Memphis Design language; pop-art statement",
+    designPrompt: [
+      "Octagonal anodized metal frame in bright pink wraps the case.",
+      "A bright-yellow single-piece twill NATO strap with turquoise leather edge trim passes under the watch and threads through the frame at top and bottom.",
+      "Matte yellow pin buckle on one end.",
+    ].join(" "),
   },
-];
+};
 
-function buildPrompt(o) {
-  return [
-    `Hyper-realistic product photography of a luxury watch strap on a clean white studio background.`,
-    `The strap is: ${o.strapDescription}.`,
-    `${o.accentNotes}.`,
-    `The strap is attached to a small octagonal watch case (Audemars Piguet Royal Oak-style, 40mm, eight-screw hexagonal bezel, ${o.caseLabel}, "tapisserie" pattern dial).`,
-    `Strap is laid flat in a gentle curve next to the watch case.`,
-    `Catalog product photography. Sharp focus. Even soft lighting. Subtle shadow.`,
-    `Background is plain off-white (#F4F2EE). Square 1:1 composition.`,
-    `Editorial, premium, like a Hodinkee shop listing. No people, no wrists, no text, no logos.`,
-  ].join(" ");
-}
+const SLUGS = Object.keys(STRAP_DESIGNS);
 
 async function loadDotenv() {
-  // Load OPENAI_API_KEY from rogerson/.env if not already set
-  if (process.env.OPENAI_API_KEY) return;
+  if (process.env.GEMINI_API_KEY) return;
   const envPath = path.resolve(ROOT, "..", "rogerson", ".env");
   try {
     const txt = await fs.readFile(envPath, "utf8");
     for (const line of txt.split("\n")) {
-      const m = line.match(/^OPENAI_API_KEY\s*=\s*(.+?)\s*$/);
+      const m = line.match(/^GEMINI_API_KEY\s*=\s*(.+?)\s*$/);
       if (m) {
-        process.env.OPENAI_API_KEY = m[1].replace(/^["']|["']$/g, "");
+        process.env.GEMINI_API_KEY = m[1].replace(/^["']|["']$/g, "");
         break;
       }
     }
   } catch {
-    // ignore — will fail with a clear message below if key missing
+    /* noop */
   }
 }
 
-async function generateOne(o) {
-  const prompt = buildPrompt(o);
-
-  const res = await fetch("https://api.openai.com/v1/images/generations", {
-    method: "POST",
+async function fetchRef(url) {
+  const r = await fetch(url, {
     headers: {
-      "Content-Type": "application/json",
-      Authorization: `Bearer ${process.env.OPENAI_API_KEY}`,
+      "User-Agent":
+        "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17 Safari/605.1.15",
     },
-    body: JSON.stringify({
-      model: "gpt-image-1",
-      prompt,
-      n: 1,
-      size: "1024x1024",
-      quality: "high",
-    }),
   });
+  if (!r.ok) throw new Error(`ref fetch ${r.status} ${url}`);
+  const ctype = (r.headers.get("content-type") || "image/webp").split(";")[0].trim();
+  const buf = Buffer.from(await r.arrayBuffer());
+  return { b64: buf.toString("base64"), mime: ctype };
+}
 
-  if (!res.ok) {
-    const text = await res.text();
-    throw new Error(`OpenAI ${res.status}: ${text}`);
+async function loadLocalRef(p) {
+  try {
+    const buf = await fs.readFile(p);
+    const mime = p.toLowerCase().endsWith(".png")
+      ? "image/png"
+      : p.toLowerCase().endsWith(".webp")
+        ? "image/webp"
+        : "image/jpeg";
+    return { b64: buf.toString("base64"), mime };
+  } catch (err) {
+    console.log(`  (skipping ref ${path.basename(p)}: ${err.message})`);
+    return null;
+  }
+}
+
+function buildPrompt(slug) {
+  const design = STRAP_DESIGNS[slug];
+  const formText = FORM_INSTRUCTIONS[design.formFactor];
+  return [
+    "I'm giving you multiple images.",
+    "IMAGE 1 (locked watch face reference): a close-up of the Royal Pop dial. The dial pattern, color, hour markers, hands, 'AP × swatch' logo, and 'Royal Pop' text must be preserved exactly in your output. This is the locked face.",
+    "Additional images: community references showing how the case head fits into wrist adapters. Use them ONLY as form-factor reference — do NOT copy any strap design, color, material, or hardware from them. Our design is completely different.",
+    `Design assignment — "${design.strapName}":`,
+    formText,
+    design.designPrompt,
+    COMPOSITION_LOCK,
+  ].join("\n\n");
+}
+
+async function generateWithGemini(slug) {
+  const design = STRAP_DESIGNS[slug];
+
+  // Image 1 — the locked dial close-up (we'll also composite this back later)
+  const dialPath = path.join(COLORWAY_DIR, `${slug}.jpg`);
+  const dialBuf = await fs.readFile(dialPath);
+
+  const parts = [
+    { text: buildPrompt(slug) },
+    {
+      inline_data: { mime_type: "image/jpeg", data: dialBuf.toString("base64") },
+    },
+  ];
+
+  // Wristbuddys per-colorway reference
+  const wbUrl = WRISTBUDDYS_REFS[slug];
+  if (wbUrl) {
+    try {
+      const wb = await fetchRef(wbUrl);
+      parts.push({ inline_data: { mime_type: wb.mime, data: wb.b64 } });
+    } catch (err) {
+      console.log(`  (wristbuddys ref failed: ${err.message})`);
+    }
   }
 
-  const json = await res.json();
-  const b64 = json?.data?.[0]?.b64_json;
-  if (!b64) throw new Error(`No b64_json in response: ${JSON.stringify(json).slice(0, 200)}`);
+  // Community references for this form factor (1–2 images)
+  for (const refPath of COMMUNITY_REFS[design.formFactor] || []) {
+    const local = await loadLocalRef(refPath);
+    if (local) {
+      parts.push({ inline_data: { mime_type: local.mime, data: local.b64 } });
+    }
+  }
 
-  const outPath = path.join(OUT_DIR, `${o.slug}.png`);
-  await fs.writeFile(outPath, Buffer.from(b64, "base64"));
+  const body = {
+    contents: [{ parts }],
+    generationConfig: { responseModalities: ["IMAGE"] },
+  };
+
+  const url = `https://generativelanguage.googleapis.com/v1beta/models/${MODEL}:generateContent?key=${encodeURIComponent(
+    process.env.GEMINI_API_KEY
+  )}`;
+
+  const res = await fetch(url, {
+    method: "POST",
+    headers: { "Content-Type": "application/json" },
+    body: JSON.stringify(body),
+  });
+  if (!res.ok) {
+    const text = await res.text();
+    throw new Error(`Gemini ${res.status}: ${text.slice(0, 500)}`);
+  }
+  const json = await res.json();
+  const respParts = json?.candidates?.[0]?.content?.parts;
+  const imagePart = respParts?.find((p) => p?.inlineData?.data || p?.inline_data?.data);
+  const b64 = imagePart?.inlineData?.data ?? imagePart?.inline_data?.data;
+  if (!b64) {
+    const reason = (respParts || []).map((p) => p?.text).filter(Boolean).join(" | ");
+    throw new Error(`No image in Gemini response. Text: ${reason || "(none)"}`);
+  }
+  return Buffer.from(b64, "base64");
+}
+
+async function compositeCaseHead(generatedBuf, slug) {
+  const caseHeadPath = path.join(CASE_HEAD_DIR, `${slug}.png`);
+
+  // Trim transparent padding from the case-head cutout, then resize square.
+  const trimmed = await sharp(caseHeadPath)
+    .trim({ threshold: 1 })
+    .toBuffer();
+  const cased = await sharp(trimmed)
+    .resize(CASE_SIZE, CASE_SIZE, {
+      fit: "contain",
+      background: { r: 0, g: 0, b: 0, alpha: 0 },
+    })
+    .png()
+    .toBuffer();
+
+  const out = await sharp(generatedBuf)
+    .resize(CANVAS, CANVAS, { fit: "cover", position: "centre" })
+    .composite([{ input: cased, left: CASE_LEFT, top: CASE_TOP, blend: "over" }])
+    .png()
+    .toBuffer();
+
+  return out;
+}
+
+async function runOne(slug) {
+  // Ensure case-head cutout exists; if not, prompt user to run extract first.
+  const caseHeadPath = path.join(CASE_HEAD_DIR, `${slug}.png`);
+  try {
+    await fs.access(caseHeadPath);
+  } catch {
+    throw new Error(
+      `Missing case-head cutout at ${path.relative(ROOT, caseHeadPath)}. ` +
+        `Run: node scripts/extract-case-heads.mjs ${slug}`
+    );
+  }
+
+  const generated = await generateWithGemini(slug);
+  const composited = await compositeCaseHead(generated, slug);
+  const outPath = path.join(OUT_DIR, `${slug}.png`);
+  await fs.writeFile(outPath, composited);
   return outPath;
 }
 
 async function main() {
   await loadDotenv();
-  if (!process.env.OPENAI_API_KEY) {
-    console.error(
-      "Missing OPENAI_API_KEY. Add it to rogerson/.env or export it before running."
-    );
+  if (!process.env.GEMINI_API_KEY) {
+    console.error("Missing GEMINI_API_KEY in env or rogerson/.env.");
     process.exit(1);
   }
 
   await fs.mkdir(OUT_DIR, { recursive: true });
 
   const filter = process.argv[2];
-  const targets = filter ? ORIGINALS.filter((o) => o.slug === filter) : ORIGINALS;
+  const targets = filter ? SLUGS.filter((s) => s === filter) : SLUGS;
   if (filter && targets.length === 0) {
     console.error(`Unknown slug: ${filter}`);
-    console.error(`Available: ${ORIGINALS.map((o) => o.slug).join(", ")}`);
+    console.error(`Available: ${SLUGS.join(", ")}`);
     process.exit(1);
   }
 
-  console.log(`Generating ${targets.length} mockup(s)…`);
+  console.log(`Generating ${targets.length} mockup(s) via ${MODEL} + Sharp composite…`);
 
-  for (const o of targets) {
-    process.stdout.write(`  ${o.slug.padEnd(14)} `);
+  for (const slug of targets) {
+    const design = STRAP_DESIGNS[slug];
+    process.stdout.write(`  ${slug.padEnd(14)} [${design.formFactor.padEnd(4)}] ${design.strapName.padEnd(16)} `);
     try {
-      const outPath = await generateOne(o);
+      const outPath = await runOne(slug);
       console.log(`✓ ${path.relative(ROOT, outPath)}`);
     } catch (err) {
       console.log(`✗ ${err.message}`);
@@ -213,9 +390,9 @@ async function main() {
   }
 
   console.log("\nDone. Next:");
-  console.log("  1. Review generated images in public/images/mockups/");
-  console.log("  2. Edit app/data/originals.ts → set hasMockup: true for each ready slug");
-  console.log("  3. npm run build to verify");
+  console.log("  1. Review images in public/images/mockups/");
+  console.log("  2. Flip hasMockup: true in app/data/originals.ts for ready slugs");
+  console.log("  3. npm run build");
 }
 
 main().catch((err) => {

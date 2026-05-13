@@ -1,24 +1,32 @@
 import type { Metadata } from "next";
 import Breadcrumbs from "../components/Breadcrumbs";
 import SectionHeading from "../components/SectionHeading";
-import { originals } from "../data/originals";
+import {
+  formFactorMeta,
+  originalsByFormFactor,
+  type FormFactor,
+} from "../data/originals";
 import OriginalCard from "./OriginalCard";
 import WaitlistForm from "./WaitlistForm";
 
 export const metadata: Metadata = {
-  title: "PopStrap Originals — Eight straps designed for the Royal Pop",
+  title: "PopStrap Originals — Three ways to wear the Royal Pop",
   description:
-    "Our own strap line for the Audemars Piguet × Swatch Royal Pop. Eight designs, one per colorway. Join the waitlist to be first when the first run drops.",
+    "Our own strap line for the Audemars Piguet × Swatch Royal Pop. Three form factors — Snap, Clip, and Loop — across all eight colorways. Join the waitlist for the first run.",
   alternates: { canonical: "https://popstrapfinder.com/originals" },
   openGraph: {
-    title: "PopStrap Originals — straps designed for the Royal Pop",
+    title: "PopStrap Originals — three ways to wear the Royal Pop",
     description:
-      "Eight straps, one per Royal Pop colorway. Join the waitlist to be first when the first run drops.",
+      "Snap, Clip, or Loop. Three form factors across the eight Royal Pop colorways.",
     url: "https://popstrapfinder.com/originals",
   },
 };
 
+const FORM_ORDER: FormFactor[] = ["snap", "clip", "loop"];
+
 export default function Page() {
+  const grouped = originalsByFormFactor();
+
   return (
     <>
       <section className="border-b-[3px] border-ink bg-bone py-10">
@@ -32,7 +40,7 @@ export default function Page() {
         <div className="absolute inset-0 halftone opacity-[0.06]" aria-hidden />
         <div className="relative mx-auto max-w-7xl px-4 py-16 sm:px-6 md:py-20 lg:px-8">
           <p className="inline-block bg-ink px-2 py-1 font-mono text-[11px] font-bold uppercase tracking-widest text-pop-yellow">
-            Coming soon · Eight designs · One per colorway
+            Coming soon · Three form factors · Eight colorways
           </p>
           <h1 className="mt-5 font-display text-[40px] leading-[0.95] sm:text-6xl md:text-7xl">
             PopStrap
@@ -43,39 +51,61 @@ export default function Page() {
             </span>
           </h1>
           <p className="mt-6 max-w-2xl text-lg text-ink/80 sm:text-xl">
-            After comparing 60+ third-party straps for the Royal Pop, we kept hitting
-            the same problem: none were designed <em>for the watch</em>. So we&apos;re
-            making our own. Eight straps. One per colorway. Designed in-house, built
-            to fit the standard wrist adapter.
+            The Royal Pop is a pocket watch with a Royal Oak soul. We&apos;ve designed
+            three different ways to wear it — chosen for how you actually live, not
+            how every other brand styles its product photos.
           </p>
           <p className="mt-4 max-w-2xl text-base text-ink/70">
             We&apos;re not taking pre-orders yet. We&apos;re measuring demand first, then
-            committing the first production run to the colorways that win the most
-            votes. Join the list — one email when they&apos;re ready, nothing else.
+            committing the first production run to the form factors and colorways that
+            win the most votes. Join the list — one email when they&apos;re ready, nothing else.
           </p>
         </div>
       </section>
 
-      {/* THE EIGHT */}
-      <section className="border-b-[3px] border-ink py-16">
-        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-          <SectionHeading
-            eyebrow="The Eight"
-            title="One design per Royal Pop."
-            description="Each strap is tuned to a single colorway — material, hardware, and stitching chosen to make that watch look like itself, only more."
-          />
-          <div className="mt-10 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
-            {originals.map((o) => (
-              <OriginalCard key={o.colorwaySlug} o={o} />
-            ))}
-          </div>
-          <p className="mt-8 max-w-3xl text-sm text-ink/60">
-            Mockups shown are early design concepts. Final materials, colors, and
-            hardware may change based on production trials. Estimated prices are a
-            target — final prices will be locked once supplier contracts close.
-          </p>
-        </div>
-      </section>
+      {/* FORM FACTOR SECTIONS */}
+      {FORM_ORDER.map((form) => {
+        const meta = formFactorMeta[form];
+        const items = grouped[form];
+        if (items.length === 0) return null;
+
+        return (
+          <section
+            key={form}
+            className="border-b-[3px] border-ink py-16 odd:bg-paper even:bg-bone"
+          >
+            <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+              <div className="grid gap-10 md:grid-cols-12 md:gap-12">
+                <div className="md:col-span-4">
+                  <SectionHeading eyebrow={`Form factor · ${meta.title}`} title={meta.tagline} />
+                  <p className="mt-6 text-base leading-relaxed text-ink/80">
+                    {meta.description}
+                  </p>
+                  <dl className="mt-6 space-y-3 font-mono text-[11px] uppercase tracking-widest">
+                    <div>
+                      <dt className="text-ink/50">Mechanic</dt>
+                      <dd className="mt-1 text-ink">{meta.mechanic}</dd>
+                    </div>
+                    <div>
+                      <dt className="text-ink/50">From</dt>
+                      <dd className="mt-1 font-display text-2xl">${meta.priceUsd}</dd>
+                    </div>
+                  </dl>
+                </div>
+                <div className="md:col-span-8">
+                  <div
+                    className={`grid gap-6 ${items.length === 1 ? "sm:grid-cols-1" : items.length === 2 ? "sm:grid-cols-2" : "sm:grid-cols-2 lg:grid-cols-3"}`}
+                  >
+                    {items.map((o) => (
+                      <OriginalCard key={o.colorwaySlug} o={o} />
+                    ))}
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+        );
+      })}
 
       {/* WAITLIST */}
       <section className="border-b-[3px] border-ink bg-bone py-16">
@@ -84,18 +114,17 @@ export default function Page() {
             <SectionHeading eyebrow="Waitlist" title="Be first when they drop." />
             <div className="mt-6 space-y-4 text-base text-ink/80">
               <p>
-                We&apos;re building the first run small — likely 50 to 100 straps per
-                colorway. Waitlist members get first pick, before any public launch.
+                First runs will be small — likely 50 to 100 of each form factor per
+                colorway. Waitlist members get first pick.
               </p>
               <p>
                 <strong>What you&apos;re signing up for:</strong> one email when the
-                first run is ready to order. Nothing else. No newsletter. No
-                drip campaign.
+                first run is ready to order. No newsletter, no drip.
               </p>
               <p>
                 <strong>What this isn&apos;t:</strong> a pre-order. We&apos;re not
-                taking payment yet. We&apos;ll only ask for money once the straps
-                physically exist and ship within a stated window.
+                taking payment yet — only when the straps physically exist and ship
+                within a stated window.
               </p>
             </div>
           </div>

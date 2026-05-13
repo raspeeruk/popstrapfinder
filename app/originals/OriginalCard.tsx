@@ -1,5 +1,6 @@
 import Image from "next/image";
 import type { StrapOriginal } from "../data/originals";
+import { formFactorMeta } from "../data/originals";
 import { colorwayBySlug } from "../data/colorways";
 import { isLightHex } from "../lib/color";
 
@@ -7,6 +8,7 @@ export default function OriginalCard({ o }: { o: StrapOriginal }) {
   const colorway = colorwayBySlug[o.colorwaySlug];
   const lightStrap = isLightHex(o.strapHex);
   const strapText = lightStrap ? "text-ink" : "text-paper";
+  const form = formFactorMeta[o.formFactor];
 
   return (
     <article className="popbox bg-paper p-0 overflow-hidden">
@@ -30,7 +32,7 @@ export default function OriginalCard({ o }: { o: StrapOriginal }) {
           />
         )}
         <div className="absolute inset-x-3 top-3 flex items-center justify-between font-mono text-[10px] uppercase tracking-widest">
-          <span className="bg-ink text-paper px-1.5 py-0.5">PopStrap Originals</span>
+          <span className="bg-ink text-paper px-1.5 py-0.5">{form.title}</span>
           <span className="bg-pop-yellow text-ink px-1.5 py-0.5">Coming soon</span>
         </div>
       </div>
