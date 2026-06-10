@@ -1,11 +1,380 @@
 {
-  "generatedISO": "2026-06-09T10:03:30.080Z",
+  "generatedISO": "2026-06-10T10:33:35.059Z",
   "sourceCount": {
     "reddit": 0,
     "news": 300
   },
-  "newCount": 54,
+  "newCount": 41,
   "items": [
+    {
+      "url": "https://news.google.com/rss/articles/CBMifEFVX3lxTE9iSzhqdW9FQUowWFdhS1pVMXFUTTNPbTZ5eWZWZVptejdVcFJhV0haY0twWUVvVEk1dkV0REk5UzBQX3J4LVJTTnh6VHhrNGdBYWJHWHV3ZjJkTklzekl2N2xMM05sODdTajJrTHY1MzlzZlhkTmkwNEV1Q2s?oc=5",
+      "title": "Audemars Piguet Royal Oak price dropped 3% in week of chaotic Royal Pop launch - WatchPro USA",
+      "source": "WatchPro USA",
+      "type": "article",
+      "publishedISO": "2026-06-09T11:29:18.000Z",
+      "summary": "",
+      "discoveredISO": "2026-06-10T10:33:35.059Z"
+    },
+    {
+      "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxQRmIxMk1MTnZRRnpvODBub2R0MnBtSWVfbURxZHpEcHNHa2kzdjh5ZHZFak1pdnV1cmFIT2xocUlpazkxNXpJZXN0OEM4UXc3UkR5Y2xjMFcxLUlYUGRtcGRMdWhqMTVSeW9jaDlVbEc2ZXhFV2JKc29pdi1wWkZOR0VZb3NsMkEyUXIteXd3RU1RajZBbHFnSg?oc=5",
+      "title": "Shoppers’ Frenzy for ‘Royal Pop’ Pocket Watches Forces Swatch to Shut Stores - The New York Times",
+      "source": "The New York Times",
+      "type": "article",
+      "publishedISO": "2026-05-16T07:00:00.000Z",
+      "summary": "",
+      "discoveredISO": "2026-06-10T10:33:35.059Z"
+    },
+    {
+      "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxNN1FSYk42QXluMzRZMHdPTzI2RkRPN3ZGaEdBUFVORURodE5uMVVuVWtVN2NZbUlVc29TUWdfRTVNX2VGamZYV3Nfc0ZPUXdRNFpONEVBODNZbmp4OTJOaGZNQTkybnc0c2pDSk5UeWk3aVVsd2gzOEExU0I5Wld2emhSY2ZzRE5lcTIybjhyMnVLVHhESVAyRDA3Wm1FUk81X05qcms5eURBVFFDREtJaTdKMA?oc=5",
+      "title": "Swatch's Royal Pop launch triggers consumer frenzy as resale prices soar - Reuters",
+      "source": "Reuters",
+      "type": "article",
+      "publishedISO": "2026-05-18T07:00:00.000Z",
+      "summary": "",
+      "discoveredISO": "2026-06-10T10:33:35.059Z"
+    },
+    {
+      "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxOX1g4M05pTHAxRHpsNUcyYmhmOUpFY2Zhblg2dm1ITW85ZFNFYVl2UE9nM2FIaVdVaXZKQUpjeFhUdlhrLTVIQ0Rob1hmaXQ3OHRQSWIzZnFNOU9vNDRZZEtLWklheHV5NWJvSXFuT3d0Y2FDQ1liNUVBZ2tDXy10RU9ZRTM5NkZMY1NaWGVB?oc=5",
+      "title": "Has the Swatch x Audemars Piguet 'Royal Pop' Hype Officially Died? - Esquire",
+      "source": "Esquire",
+      "type": "article",
+      "publishedISO": "2026-06-02T11:52:08.000Z",
+      "summary": "",
+      "discoveredISO": "2026-06-10T10:33:35.059Z"
+    },
+    {
+      "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxNOW1uU2tMUTRxS2JFRXJNNmVmdmN1Vnc5NWhBQXdkRk5YbHE0bmxSbm1hTzZuWk1OMXY4YUU3ZlRfTzIyYmNQUnJva1hZQXVsV005VHFpX0tKMjhvejJMM2tJR3NOZTU1aG1xc3U0NDZ4SzlJd0FZdnowdGFiWHNRY1doREQwUdIBiwFBVV95cUxNNmFZblFFWUhTSEdZdlQxMDV2VUxoUWt6b1pUUkx1aExjaERxOU45cEhmaUU4R3FZQWhHR1RpSVllQ3laZlpadlZGbFVHSkpnWS1QU1ljYy1LdEZGa3QtU2l3N2pXbTdpQmNnTU1OLVdFRDdzdU13Qml0N3BzNkJGLXpwbE1FelhkQjlz?oc=5",
+      "title": "Audemars Piguet's watch prices remain stable after controversial Swatch collab - CNBC",
+      "source": "CNBC",
+      "type": "article",
+      "publishedISO": "2026-06-02T12:00:01.000Z",
+      "summary": "",
+      "discoveredISO": "2026-06-10T10:33:35.059Z"
+    },
+    {
+      "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxNNGhQMGl5UlEwS1BzQW5ZTXdORThVNDV5WjZiak1IYXA3WHFmSFdPZlIwOGZnU3NHRkxWWEVWbm9KYWNMazI5Vkl6aTItMTBoS3QxZlJGLVZjY1d5Y01WazhBbmJiQWt0MldycE9jWHc4U1NJMVFQeC1idHpRUXBCTkUyZ2xHLTg?oc=5",
+      "title": "AP X Swatch 'Royal Pop' Watch Straps: The Brand to Trust and Buy From, According to Experts - Esquire",
+      "source": "Esquire",
+      "type": "article",
+      "publishedISO": "2026-06-03T11:17:11.000Z",
+      "summary": "",
+      "discoveredISO": "2026-06-10T10:33:35.059Z"
+    },
+    {
+      "url": "https://news.google.com/rss/articles/CBMifEFVX3lxTE0zSndYRVRITnhfSjUxRXB4Sjk5TDl6UTZlSTFrMlVyOTdPc2lVUVdmQjBTRXUzYW15Wk5uVThHYXczeTkzQXdMc01IbkhkeGl1Wlg1NnVnVXZlVnh3QWttZTZOSXhqR0xVOEYyLUsxSGEyc2VwTnF0QVdxaGc?oc=5",
+      "title": "Audemars Piguet Royal Oak price dropped 3% in week of chaotic Royal Pop launch - WatchPro",
+      "source": "WatchPro",
+      "type": "article",
+      "publishedISO": "2026-06-09T11:26:57.000Z",
+      "summary": "",
+      "discoveredISO": "2026-06-10T10:33:35.059Z"
+    },
+    {
+      "url": "https://news.google.com/rss/articles/CBMid0FVX3lxTE95TjdFTENacEFEWHVmNUY1eXdIUXZWX0FzMHlVMGRBQ3NCWkt6cXdCaEtiMFp3SzdRVkJ1RXdiOWJVUEZKZU9MN2JjWDdIWW8tbVFJTk5hMHhwX2lKWVRqTkFPLVlicG1INXpHWmNHUTI1M1llSTVr?oc=5",
+      "title": "All 8 Swatch x Audemars Piguet Royal Pops, Ranked - GQ",
+      "source": "GQ",
+      "type": "article",
+      "publishedISO": "2026-05-13T07:00:00.000Z",
+      "summary": "",
+      "discoveredISO": "2026-06-10T10:33:35.059Z"
+    },
+    {
+      "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE5HQnZiVUxIU3hpRW9sMzVnS0hZcTR5ODJLdHFrZ2hMOW5teVIwRmZXQzBCWG9qRjItYlFqb0RTMEhaOThkaVZNc2ZFMmZGVmIxR0VtYTFYeS00RURjc1JjS1h0WW80V0M5Ni1acXZ2V3J2dERHTmc?oc=5",
+      "title": "Introducing The Swatch x Audemars Piguet \"Royal Pop\" Collaboration Is Here, And It's Not A Wristwatch - Hodinkee",
+      "source": "Hodinkee",
+      "type": "article",
+      "publishedISO": "2026-05-12T07:00:00.000Z",
+      "summary": "",
+      "discoveredISO": "2026-06-10T10:33:35.059Z"
+    },
+    {
+      "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxOM01TUkFXRGh3VWEwZ1d3X3IwdDVEX0sxai1Jd01LTG52V05DXzZQU1VIelBDQ3NsaVFrTTY3OXZaZW9sYkJpQzdiWVFadi1pTzdRVmVpZGYxUFBSUno2TEZsbzlXVFBaM242U2JZbDkzQmVUM19CbUhDUHdvRjBTOU5fbTRnV3VoV2x3?oc=5",
+      "title": "Swatch and Audemars Piguet’s ‘high-low’ collab sparked a frenzy. Who’s the real winner? - CNN",
+      "source": "CNN",
+      "type": "article",
+      "publishedISO": "2026-05-18T07:00:00.000Z",
+      "summary": "",
+      "discoveredISO": "2026-06-10T10:33:35.059Z"
+    },
+    {
+      "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxPME5xZGJ1V3R5RHJsREhOTlp6aWYtZ1NZT0RwYmJRU0FjZGtvR0lZZ09DUVVaUkRWcWpvdjlBcTZZeWlUY0dEbmR1ZTM1dUhLQ08yWnBiMXczck1XblNxeGdTbHoyNFVlWHhNZHBGb1d4MTVENUQtcUZJTmg4cGFmVW4zVDdVZDhfVkRfY2t0MkI0VFJGSVNCdlpEOA?oc=5",
+      "title": "Every AP x Swatch ‘Royal Pop’ Ranked By Resale Value - Esquire",
+      "source": "Esquire",
+      "type": "article",
+      "publishedISO": "2026-05-18T07:00:00.000Z",
+      "summary": "",
+      "discoveredISO": "2026-06-10T10:33:35.059Z"
+    },
+    {
+      "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxOa295VlAweWdQS0d6QTd6ZDRKMGs3ck5jYUFiMWdwQUk2ZUd2MEl0SzgzWnhTbThxc3JvMVhvTXRkUTVnclFzQjU0WnFReDBlYTg3MG5NM3JmR0x6SmlxUE5GQU91cFUtQjYzVzAtazNPblNOei1sTElSNlJEbWgydzlUN2Q?oc=5",
+      "title": "Tear gas and fist fights overshadow Swatch and Audemars Piguet’s ‘Royal Pop’ launch - Financial Times",
+      "source": "Financial Times",
+      "type": "article",
+      "publishedISO": "2026-05-18T07:00:00.000Z",
+      "summary": "",
+      "discoveredISO": "2026-06-10T10:33:35.059Z"
+    },
+    {
+      "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxOS2MxQUVXT2lRWkxfblFJOVg5bDhGMG9oSkhDaWsyY3gyM0lvS3p6Zk5sa3hFYy1uNl9QWUxWaW5kamx4M1UycGlUanN0anpQYl9zYzdqelVCaUFfMjlqRzdOdzdHVnc5d1pVa2JTSlE2VGZib2JwTHNKN3Jlblh5TjhQWnNCeFZFdUk0eXcySHFPVmV3dUQ0UTJQRG9LVmRoMzNSMk8yRWtaeUtHRzlOUGlB?oc=5",
+      "title": "Here’s Which AP x Swatch ‘Royal Pop’ Watch Is Selling Fastest Right Now - Esquire",
+      "source": "Esquire",
+      "type": "article",
+      "publishedISO": "2026-05-18T07:00:00.000Z",
+      "summary": "",
+      "discoveredISO": "2026-06-10T10:33:35.059Z"
+    },
+    {
+      "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxNeU4zdkRGbDlENzJaVzAtWldmbzdockc0X1VLWlI3em80bmxWSU15d2dhcjMzU1QwNmZjLVF1T0wtcmRoOEJWdWthVTJHOFlmVzNmeHZlMVNlYWdSVE4xRXBzcXU2dGotcjNkZ0k1RzNUNjAzVlpyaV9oTDZsTktHdDdjWnhkY21jNFNaeWhlcUN3NXRkTGx4SU1yOHlsT1pxSGQ1emY3b0ZJTkNj?oc=5",
+      "title": "The Audemars Piguet x Swatch Royal Pop Was Never Going To Be A Simple Royal Oak - Revolution Watch",
+      "source": "Revolution Watch",
+      "type": "article",
+      "publishedISO": "2026-05-13T07:00:00.000Z",
+      "summary": "",
+      "discoveredISO": "2026-06-10T10:33:35.059Z"
+    },
+    {
+      "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTFBnWTNiTlE3TWhQWXlBUVNsdUx3SDJIZVdSZExDVVNjelROVElZMUd3cklvaWFOVlZJX0sxQUFYZU9ibG8xZzR6T0hHWXQ3YW1aVlJFTTRXbHotR3I1Tks1QXQwam5WSFpoTHpCakJWWFAydDA?oc=5",
+      "title": "Riots, Store Closures, and Pepper Spray: The Swatch Royal Pop Had a Rough First Day - Two Broke Watch Snobs",
+      "source": "Two Broke Watch Snobs",
+      "type": "article",
+      "publishedISO": "2026-05-17T07:00:00.000Z",
+      "summary": "",
+      "discoveredISO": "2026-06-10T10:33:35.059Z"
+    },
+    {
+      "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxQRG5iRGFFSWowdG5lcjZvbTFtLXp0ajRNd3RCVDBmQldmMF8zWkpUX3dkMTVUYW5MLTBxVmtaXzRrTW9pR3pUbTE5U0JndGZPWno4MXoyeGNLeFUxWVU5OHo0YzZBbjJJVG1YUzgtWWlCWVJHVlZlanhCU0xudW1CWjZYLUZGX0NURkFicllmMnN0S0c3cW5XNHJLVm1LaFZWOWFfZldqS2w4R3NaX3BzOXhn?oc=5",
+      "title": "Official Look at the Audemars Piguet x Swatch Royal Pop - Sole Retriever",
+      "source": "Sole Retriever",
+      "type": "article",
+      "publishedISO": "2026-05-12T07:00:00.000Z",
+      "summary": "",
+      "discoveredISO": "2026-06-10T10:33:35.059Z"
+    },
+    {
+      "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxNaklSYk5lclI3UkhoczdlQ3k5NlRTNW5DYXpDc0lzVTRaVUUzZVlwdVlzXzNvYkJCWDFyeUN4YmFxRGRSZ3VhYUFCdzhIWllMOUhNQXZJY1VfR19LWUpzSnpmU3RlbnExb1FJLWx6RWFnZmltdW9jRGIwd25RT0dIeEU3dHViNkpuNERpMnJLeUl2Mkd0dHlLdw?oc=5",
+      "title": "Swatch and Audemars Piguet Confirm “Royal Pop” Watch Collaboration - Galerie Magazine",
+      "source": "Galerie Magazine",
+      "type": "article",
+      "publishedISO": "2026-05-11T07:00:00.000Z",
+      "summary": "",
+      "discoveredISO": "2026-06-10T10:33:35.059Z"
+    },
+    {
+      "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxPdk0xVjhtMnBmSDBvV0dUdG0xWktiNlpRMGxLcUJreEE3UFJrU1NEbENsNWxzTlV0dlgtT0xJN2NXbHV2X3lIQ3J4bkM2b2d6SWFJRzZqNHlTZGR3NGdZUVJTSEhVaWJFT29abHFQakJhRW5YTGFVYUhnVnBLc0YydFp3ekxaeDFrb3ZQR0lyTGt2cEo0MU13X21PZDN4NnZQaEJvdjRGRENMa1pubWZveDFnVm51d1NVRHc?oc=5",
+      "title": "What Went Awry With AP and Swatch’s Royal Pop Launch - Bloomberg.com",
+      "source": "Bloomberg.com",
+      "type": "article",
+      "publishedISO": "2026-05-18T07:00:00.000Z",
+      "summary": "",
+      "discoveredISO": "2026-06-10T10:33:35.059Z"
+    },
+    {
+      "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxNSjE3d0g2SzJ0NWl4bFl5YUVZeU9aUXpxdS1aU2dGcUk4U3p4SlJRdmRQZXpyV0FsSGdXSlRVR0JzYk9BLS1sanIxcGY2ZXpLczR6b2R3QW5kaHNHM2JYLV9UVUl2QnFsSUFvSmZ6N0w3elV3a1FPOUxrUXJoSjEwdg?oc=5",
+      "title": "The Audemars Piguet × Swatch Royal Pop Is Here - Revolution Watch",
+      "source": "Revolution Watch",
+      "type": "article",
+      "publishedISO": "2026-05-13T07:00:00.000Z",
+      "summary": "",
+      "discoveredISO": "2026-06-10T10:33:35.059Z"
+    },
+    {
+      "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxPYTBfVHR5YWVXb2dCVkN2TjRNZEpxdV84SHk1WjE5R1R6NjZTajFCZTZXbVBldzlEVjRJLXl1S2N3YkJUcjdxVnZhYlJDWmN1U0lLczZKcXdLYVpnSVBEUkVzbkE0RGhQZjBWZmlwX2FkV3FWYTd2YWtDT3pZVEQyTXc3ZGFQcXFua2d3QUZtb0kyQVRDcE5hLVhyVHI?oc=5",
+      "title": "Swatch Royal Pop Watch Launch at NorthPark Draws Crowds, Police Response - D Magazine",
+      "source": "D Magazine",
+      "type": "article",
+      "publishedISO": "2026-05-17T07:00:00.000Z",
+      "summary": "",
+      "discoveredISO": "2026-06-10T10:33:35.059Z"
+    },
+    {
+      "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxPLURRR0NleHgtNERiQXgzQURQbDN5VTFoTERzTFVqQ3NWcU1GcFRpYW9fMHNLRi0yV2JiWnFpT3N5MTdFUHE3SzdIUkF2RjJHbExyQk1naEZUanBnMUJjVHR6UGFRN01idElTcHJrLUZFdlQ2VzR2OTRsU2t0TXJPY19ydGM?oc=5",
+      "title": "Swatch and Audemars Piguet’s collab provides a much-needed pop - Financial Times",
+      "source": "Financial Times",
+      "type": "article",
+      "publishedISO": "2026-05-22T07:00:00.000Z",
+      "summary": "",
+      "discoveredISO": "2026-06-10T10:33:35.059Z"
+    },
+    {
+      "url": "https://news.google.com/rss/articles/CBMi6gFBVV95cUxNYlBwb1BIWmx5NEZVZGFiellTSndDbUlsRmJhRldPMVlkWVJ6NWNDTko0UXJBZlMzdUJfcVFWRnU1dGJNSGJ6bUlmYnVuaWxEYVBnX3FZRWt3aDBpanlHeHJjY09yYnhKbDFIS01vRWktTm1HbUlpR3FEbEhpc0tkUGNHREU5cmNQWFNOY1YtTGdUb3RWX2pwWEVyRVh0MzIxX2hoLUtWVkdkX1FyWkpkM0Y5VDB6ZW1sXzEyenBRbkQzbWh1Zm1WZVl1RExpT3RfLVJaVkJvdkx5MjhzNUVzQ3YyMzlvVGo3enc?oc=5",
+      "title": "£1 auction set for Audemars Piguet x Swatch 'Royal Pop' - MSN",
+      "source": "MSN",
+      "type": "article",
+      "publishedISO": "2026-05-22T07:00:00.000Z",
+      "summary": "",
+      "discoveredISO": "2026-06-10T10:33:35.059Z"
+    },
+    {
+      "url": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxQLWhNTXMtMC1lQUVmTWMteGFuaDlZLTFIbFNkemt0SHVBWlppNE1JRHF3d0doQm11MFN2OUs2dDFDQW1UbE5VeU9HU2lvcHIzbkJvUXlGNkhOa1lVRjR3MHg4aE1SVGVTZVVlSHNESThZNThQQTFIcG9EV1BzT1phZWU5ckk5ZjdjTWZPeEpYTVlJUUxjWHRjNHAzVThhLW9KbGRCRE9jM2NVM1VCX0ZIYlZBamRQVEVONDZYNHFLS0RkN0NuTlNXRWVCM1lQY3ZaVTJaYw?oc=5",
+      "title": "The Controversy (and Hype) Surrounding the Audemars Piguet x Swatch Bioceramic Royal Pop Collection - LUXUO",
+      "source": "LUXUO",
+      "type": "article",
+      "publishedISO": "2026-05-18T07:00:00.000Z",
+      "summary": "",
+      "discoveredISO": "2026-06-10T10:33:35.059Z"
+    },
+    {
+      "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxNaVY2cnk3aHBsOFBjRVJ6ODZxR0tBMHh1bl8teV9URHBTclZDQkJWVFhUOHlXTjhLdGtvS0VId3B4VWZyT1NtNlpHV1NIai1EMkYyVmpaY3hFS2sxWjNTTkMyZ0VGdTMzdzhzcVU1QlJaRExpV1ZzenJQbGh4Q01lZUlXRE05R055ODVmOEtTWHY5eTFHWk9XenNMa3hrdU1WMS1jNC1pdXY0M0h5Xzl6ZmNNS1N6QUNXU2c?oc=5",
+      "title": "Chaos consumes Swatch stores over pocket watch collaboration with Audemars Piguet - NBC News",
+      "source": "NBC News",
+      "type": "article",
+      "publishedISO": "2026-05-18T07:00:00.000Z",
+      "summary": "",
+      "discoveredISO": "2026-06-10T10:33:35.059Z"
+    },
+    {
+      "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxOS0JURjRwN09lNmpHQkpUQkpYeXo0RVhBU1BQV0RmYUpsb1ZRZ1M2RkY2aVBtaktuWjBoVHVvZWdRZ0tRR0lzNzVhUmluLWg4WEJTTjVZcTliMHpYT05iRFE2bFBxdkZUNXJDNmgwNVp6dlpLZExVUWxKM2hUXzFHaUtiZnV5cTczeXRfRWZMUWdFLWtoZldzVGhIaGs0cDJ3TlZsOXFZVVFjLUdKT0s3T1ljN0Y?oc=5",
+      "title": "Swatch-Audemars Piguet Watches Flipped for as Much as €5,000 - Bloomberg.com",
+      "source": "Bloomberg.com",
+      "type": "article",
+      "publishedISO": "2026-05-18T07:00:00.000Z",
+      "summary": "",
+      "discoveredISO": "2026-06-10T10:33:35.059Z"
+    },
+    {
+      "url": "https://news.google.com/rss/articles/CBMi6gFBVV95cUxQM05SUkFRWmFiZ1JreHhHdzBnTDU3QlR4d0Rib1RMWmhJbTFlV2pVSWs1ODdfcUJjcVNtMmZGVEZTMjB4ZG9jXzZuVHMxQnVSUmM5bjdNMV80bnVDWG5hLS1PLXVNVDVtdHJwOW9zTEViRG4zSlBsTUVZVmFOQzlVSnVaTXRrYXlOVjJyZG9fdnhSRnhzcjF1Uy1xWXltQkt4OE1QcW9oaVBINUJyUjZQeGtkVVJCNXJselV1UnBKWGxVd0dxdjJ4RW96cG94RlU0VWQwSnFiNmFxbFZyd09iT2lFalh4UVBYQXc?oc=5",
+      "title": "Oura Unveils Ring 5, Revisiting Swiss Watch Sales, Swatch and Audemars Piguet Launch Royal Pop Watch - Above Avalon",
+      "source": "Above Avalon",
+      "type": "article",
+      "publishedISO": "2026-06-02T19:54:34.000Z",
+      "summary": "",
+      "discoveredISO": "2026-06-10T10:33:35.059Z"
+    },
+    {
+      "url": "https://news.google.com/rss/articles/CBMi7AFBVV95cUxQMFVSU2N6UTE4ZmJrMU84ZENqZ01rNWd0UF9YbU9HbUdkUEVodHRBczY2OEQ4MnFXUzFRbTNfSGVLYzMwNThQYXFBZW93X2ZRaW5TcXpjTUlfV3A0OUtLdG1ReHlRLXViU0ZhWDAyWEl6ZVhYeTRwRElJTnhCdVB3a3FBa1oyTU9oM3V0Nl90MHBRaVBZM0RucnZMNGE2ODBqYnEwQ1llZ0pfV1J4dm9QT3VLYWM0bWc0dXVtdzhmY24zVmZCNWF0a2hNcDN2Z1BKalFicl9uZnpoSW02cHlnRFBhNGV3Q1AxZkNhQQ?oc=5",
+      "title": "Swatch x Audemars Piguet Royal Pop watch sparks chaos and resale frenzy, but prices are already dropping - The National",
+      "source": "The National",
+      "type": "article",
+      "publishedISO": "2026-05-18T07:00:00.000Z",
+      "summary": "",
+      "discoveredISO": "2026-06-10T10:33:35.059Z"
+    },
+    {
+      "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxOcmJycnJ2VTdibUxHNzVoeXdHTlZNcmdIN3ZVUjhMQ1dBNTdTeVlMOGdPVlNJRTF1OWg4ZmVzOXlYNVZ6T09SOVB6Qm4xdGs5UEdRLWh3a3NnQ3pyNzhMM014QWhYNWhITjBXWXFFcGVJVWZnLVludXJQTDliMVE1MmlVWGdQWERpVGxzVVFpZTF5VDQzdnc3VlJicERac1RadkNPc3d6T3JSTWN2ejBqTFo0NnZ6ZjkyWGwycHFn?oc=5",
+      "title": "The dangerous drop: Swatch and Audemars Piguet chaos exposes dark side of hype marketing - Campaign US",
+      "source": "Campaign US",
+      "type": "article",
+      "publishedISO": "2026-05-18T07:00:00.000Z",
+      "summary": "",
+      "discoveredISO": "2026-06-10T10:33:35.059Z"
+    },
+    {
+      "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxPTVQ5MEdzRktsUjVPc2lkMmxYZkg2R0FrYWlBYXpsM3VRTFVEYXowdW96Q25DYVc4NlZsZTRQWHU4VmJkWFRMLVVGRHBLS1VTZ1FxRVlVNzBMQ3ZIazYwQnJzaGstX1R3NjVKR0d2R3lfU0U5V09feDhzUEstaUJ6alhMOU9zSjhPUUpLTUMwYWROTHdWaDFUZHBzd3hidXg2cHN6aUdPLWNIcHdkTXI5azE3dXNsaTlpalE?oc=5",
+      "title": "Swatch-Audemars Piguet watch launch ignites global chaos, tear gas fired in Paris - South China Morning Post",
+      "source": "South China Morning Post",
+      "type": "article",
+      "publishedISO": "2026-05-19T07:00:00.000Z",
+      "summary": "",
+      "discoveredISO": "2026-06-10T10:33:35.059Z"
+    },
+    {
+      "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxPZnhuMkNObTluWURVQUdqNXJXS3BxVzVEQVJBMktTVDBwVzhxUEtoWEZSN003TDVfd1lrMklHYmM5T2N6dmdRazRwSjN4R0h0aWJ0MUJpLTg0d2lvcUZFOHVVTWI2VHZhOVR6TEZJbUYwMUZmMFlOSWx4N2dORXBwc0hZN05rbTRXWDlSTTFHZkg0RUFkOUVEVDZfelliZERtWWstQWNENTFwSWdZdUN1ajAyUQ?oc=5",
+      "title": "Swatch-Audemars Piguet watches flipped for as much as $2,800 - Dallas News",
+      "source": "Dallas News",
+      "type": "article",
+      "publishedISO": "2026-05-18T07:00:00.000Z",
+      "summary": "",
+      "discoveredISO": "2026-06-10T10:33:35.059Z"
+    },
+    {
+      "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxQN2JMd09Ta0lyanZia0lDSFd5Z2toUG5kS202bzRTdFg1MWdiTks3MXFyOEhRbmpOMkVvS3pDOEE1ZzNsbU4tRV9renFDQlRXbHI1WHY1ZFFBZEQzckNuTHJ3eFN0blNpN25Lck9xRTY3MmNrVG9jdG14Sjlac0QxaUxCdUpiU0dXdzRLLVdOZ3kwdjdzT09PSUFXWDlfZnNHc0ZobU1QWmJfTDV6dEZLOTdyS1FHcWFSWlVlUXdteG53RW5kYU1id0xZONIBywFBVV95cUxNYXFMTUNlVDVPMWI1T2ZDaXhUdVdNUXl0emhlNDVoNkR0MWVRWmNtcmhfSmpMSDV5cy16bmtNN19aazVCRE1zOUY0RTJxa0NieDlKMXBJM0JEOVoxcE5QMkVrQ3dhVmgzX2NDbHNnTUlqU0MwekNydGY2Um1UV2t5RTRnRlMtVEY1M1BvTFdhUVpNWHNkSkhISk9lckZhQmh1UjF4THk1Q2pvY0ZiUWM1aktabFBXSXg4NVlzWXdZcnZVSWNLQldUcThNRQ?oc=5",
+      "title": "‘People got crazy’: Swatch’s US$400 Royal Pop watch and drop-culture madness - South China Morning Post",
+      "source": "South China Morning Post",
+      "type": "article",
+      "publishedISO": "2026-05-19T07:00:00.000Z",
+      "summary": "",
+      "discoveredISO": "2026-06-10T10:33:35.059Z"
+    },
+    {
+      "url": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxNd21iTkxXYjNBcjNHSVVPeU80Z3ZaYXN4c0RaWkNDc3NVTU8wVjBoWTc3ODYwZkwwTzBSNHhrRjBOUUNhVk4wdy1kSVAzRUtuZlRjRWNGbU1hWjg2R1ZGSmtNdWZpekEwODJfVUdVU25UYzRFekVqZ2Z6NlhDbUk2MTNRTk5iSF90a25JTmgtVXUwc0lteVNtWVh4RmNpeEZ2UHpaYl9nbVhqUlZGYmczT2ViVGlxSmdZRXNXT0xJTmE4bFZ0dHUwZVpnakdhS2hZMi05Q9IB2gFBVV95cUxPSDRCUGtWSGt0SlFQdkYtZ3ZRbWpwQnBadjh1UnpPcUo3dDh1SWpReGtYRS16UFVLRzhZdlBNLUJwb0MtcFpKcXJ3YUFCZGtkbTI2M25kV0NnMFd4bE04ZEtlTlAxZGd4WENYd1psaURpNU1RaVRtZHVvX2lpMV9sd1pJckZiYkhuUDBnZm9GVFRFZElXLUpUZC1qRF9LeGhmdnRxcXNaR3NYWWcwaXBCOVpOazBhbnJSYUFNQjdrUU82VzJOb1FObmlHUk9CM3dhOUd4SHBPQUNMUQ?oc=5",
+      "title": "$95 Lambertus strap will turn the Audemars Piguet × Swatch Royal POP pocket watch into a wristwatch - Yanko Design",
+      "source": "Yanko Design",
+      "type": "article",
+      "publishedISO": "2026-05-18T07:00:00.000Z",
+      "summary": "",
+      "discoveredISO": "2026-06-10T10:33:35.059Z"
+    },
+    {
+      "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxOLW42UFUwbkJlSW1wai1Wazh3V3JOdlYxSVZHNURHQUlUV1l6b2xKTWZIdmRiT2Nua1l2bFE0RXU5UmVyNE5rQWkybUxPenp1cFFybmdxWU5VSkFyTUptcEg3S0dfWHZ5RlVzVEF6XzhXZGJMZ2xYa3oxVFA1aTY1S1dnbmpVSFFXbG5GTElINlRMNWg5RkZMa1d5T2NZQng0akFNMQ?oc=5",
+      "title": "Audemars Piguet and Swatch Collaboration: Where to Buy - Yahoo",
+      "source": "Yahoo",
+      "type": "article",
+      "publishedISO": "2026-05-18T07:00:00.000Z",
+      "summary": "",
+      "discoveredISO": "2026-06-10T10:33:35.059Z"
+    },
+    {
+      "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxPVFVzZ3ZYeWlUQ3kxVFBkZlZIUXN3MUllWmFTWUN0Vm00d2FSelJfeHY1bHg2Mk9jVkF6bVpiSG1sakZyN21mT0lNUmY5RmtvYXFFRmo4TG4zVjhsOTdjemlLRjZrSmsxT0U0TGNIZDJVMG04dnhvN3FBVWJWVDhnN0RBeU05OHZyMnRQblNxSUZtU082czB1M2hYZW9EZw?oc=5",
+      "title": "Swatch’s Royal Pop Drop Turned A $400 Pocket Watch Into A Resale Craze - Finimize",
+      "source": "Finimize",
+      "type": "article",
+      "publishedISO": "2026-05-18T07:00:00.000Z",
+      "summary": "",
+      "discoveredISO": "2026-06-10T10:33:35.059Z"
+    },
+    {
+      "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxNZDB1VUZxVjdHZUlQa1NMWllsajhSNjdqZ19RaS1SV3NKcnI1dHUtbGVsNWlvRXl3Z3M3N181eElDTHlDRVJKWGtBS2JTU25MMGozN3ZPb1NhUkVxRHFhbzJ1ajduaWx1ako4WEZZcVlEbkhNYUZJLXBta21JbzUtN29uMWJRQko0?oc=5",
+      "title": "Viral Swatch x Audemars Piguet watch won’t be sold at Somerset Collection after frenzy - Yahoo",
+      "source": "Yahoo",
+      "type": "article",
+      "publishedISO": "2026-05-20T07:00:00.000Z",
+      "summary": "",
+      "discoveredISO": "2026-06-10T10:33:35.059Z"
+    },
+    {
+      "url": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxNQVIwNDhVdTRrZTNpb3pYZGJEbjFUaXk3LVp3Q0lpLVQ4WFprS0djM3g0dXJUbkFEcnVfS0p6SVJXdy1Vdnp3Yk9VWFVuVUxRSDBpekE2eVJxUWtNbXVhRGhJQWluZXZtckVyTjFvc3lZSDlhMTZwSG5kQlNORHZPM3BrRk5mZlh1SzZyZFMwbHZHSE9TQnd4QUZISUdjOHlpblFBWGU1djBfV3o2dFU0eGVSZFM4UTIxSTBhUWpXdkxxREc1Q0ZfbXZzWHFETFJLT1ZpUFRkdHEyZ9IB3wFBVV95cUxQd2l0Zm1KR2tCdFNrSmdxam9PdEVyT05OR3luNXhacGRRVHBYVXBGZ2h6cFNJcHd2U3hXYW9tekZkMTJmcEowd19JVUxKNnZoVUJUOFZ6eUFuNnUzeVNqRGc2ZkM3emhXdU44WkZ6RDNrVjBZdVQ4XzVOZW5QdllrcEpXdGZsOVkwX1lkUENPX0lkV3dRaGdyR1hqMF9ZdlZaVHBZU2VGWTN2VEIwbFdmdlNVTzhBSFhjRkxSTnVHOUZUcEVpYkVJcV8tMnpHTWJMbVdveFgyeUdJY21Ja1I0?oc=5",
+      "title": "Luxury, chaos and the $400 pocket watch | Audemars Piguet x Swatch - India Today",
+      "source": "India Today",
+      "type": "article",
+      "publishedISO": "2026-05-30T07:00:00.000Z",
+      "summary": "",
+      "discoveredISO": "2026-06-10T10:33:35.059Z"
+    },
+    {
+      "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxQbVZjLUpoZEpsLTNQMlItbGxJc2RwaU53Z1Z5a0JCd0Y4bFhvSHl5ZkFzVTVENEh6V1FLeW15RElHeWhVbjAzQ0JuMC1QOGhvUFhMdndLSF9XZDQzVkF2SXZMMmdBVi1rSU82Y3Rra3JtaHFtNHRTZnp3bmxSV052dVZoYTRMTUJwX1RJWVR1VU95S0NYeDFBcDJTVmJZdmp2RmdPcV9aNVF3V2FhTTVqRGtadS1UYUFa?oc=5",
+      "title": "Swatch-mania: Shops shut as Audemars Piguet timepiece unleashes chaos - AFR",
+      "source": "AFR",
+      "type": "article",
+      "publishedISO": "2026-05-18T07:00:00.000Z",
+      "summary": "",
+      "discoveredISO": "2026-06-10T10:33:35.059Z"
+    },
+    {
+      "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE1aWFlkTV9vMGpmZEh3aXRTM1BsN2VSZEdIck05ejJ0MmRhYmxtbVBac0wtX3paVWJHQk04alZiVWJVbFNaa2huZkYyTFh4QV81Q045RFh5QnNVbGJFeU9Fa0VaMWtob2pWWEtxSDRCOGFTTnEtdGdoQ0c4ZzNCRUE?oc=5",
+      "title": "Swiss Watch Exports Down in April, But Colorful Watches (Like the Royal Pop) Gain Fans - jckonline.com",
+      "source": "jckonline.com",
+      "type": "article",
+      "publishedISO": "2026-06-03T17:45:41.000Z",
+      "summary": "",
+      "discoveredISO": "2026-06-10T10:33:35.059Z"
+    },
+    {
+      "url": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxOSzlOeUVBTHBlQXNJekVpMkFQQ2VHTl8tM2NXa2RMSjZJOGp6bWRnMFhjZkY5Y1Y4SE5kTWFZTmtGcVR2U3pBSDFjYUs0YnpyVmxNZ2FhRU1lbC1zNkpqdndtV0p1UlVfVzJNZnhBVUtpckFMWFZ5TDBVRExpVmRPS3BZSWVlUVBsWWFROGJjV2RjR2tXZDl6YkZVMFBjZWRLdGdOZmJPYk55bzU3Qmh0d2VBVFpubFpnQ3UyR2lnM1pKSXZMU3N3V3ZrS1Z1amVZUGc?oc=5",
+      "title": "Forget the royal pop: Audemars Piguet just reminded everyone who it really is - MSN",
+      "source": "MSN",
+      "type": "article",
+      "publishedISO": "2026-06-09T14:39:05.000Z",
+      "summary": "",
+      "discoveredISO": "2026-06-10T10:33:35.059Z"
+    },
+    {
+      "url": "https://news.google.com/rss/articles/CBMifEFVX3lxTE5lWURYeWZRWElES1B6RzYxb0MwWjVDYmxLUFYwc2w2R2ZoZThkcWVJNHFieWJsZTVlQ0o3dldFbWxEOVdONDlBSDFLZ1FwQ2dyRVJYMWw5dXVESjNOYTVCNUoxbE5EOFVMZE0welM1cm51Wjl6b1JjaG1tVHU?oc=5",
+      "title": "Has the Swatch x Audemars Piguet 'Royal Pop' Hype Officially Died? - Yahoo Life UK",
+      "source": "Yahoo Life UK",
+      "type": "article",
+      "publishedISO": "2026-06-02T11:49:00.000Z",
+      "summary": "",
+      "discoveredISO": "2026-06-10T10:33:35.059Z"
+    },
+    {
+      "url": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxOZ2ZoaTFuSVh4RlZlQ1R5VTUwWWl2MXdMUzRzMWliVE52UXBNdEQ3VzhpcHZBWV9VNkdwY1BsNENJVHNfSm9wd19zQ3Z5VEdoTVhyNm5FTnBUd1lOencyM0F4R3Z3WlQxWml0NmtBNzFlQ3AtaG1NOXNkYnZHUDlmTVZiY0p6RmJCMVZZM3pzMFk2bGZHd0NKR2RoeTRoYlRRcXJYNF9JclpOVXJ5SmN3ZWNvUTVHdHRuaXV5bmxFRWlNdEUxTGEzZEhCNG1Ua0FON1J0UEVkVDd1YjRWTC1jYWJvbw?oc=5",
+      "title": "Has the Swatch x Audemars Piguet 'Royal Pop' hype officially died? - MSN",
+      "source": "MSN",
+      "type": "article",
+      "publishedISO": "2026-06-09T08:51:28.000Z",
+      "summary": "",
+      "discoveredISO": "2026-06-10T10:33:35.059Z"
+    },
     {
       "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxPTzJ1SXdFSm56RjNvWE1HSGsxaEJnU3hjaVpfem9GLUpXN2tsNkJ6a0d4VG5IUEdCNi1wSHc2eTA0TlNzalB0TFVhT3Nialc5MzRMRFBBYzcwRktmOGdDVk9qR2txRENfTDZkaDhkOVcwLURXWXhkdF9qVG9ON2lsWUlpdVVpa0x6RXVMdm9zVjFyWGJYb3lROHNSUW5fc0tsSnkybklIbk1VNzFiWVHSAbMBQVVfeXFMTl96TGp3R3pkdTFfaVdTeWhTbzBkOFA0bjU5VnFhMXFCTGt0dWFLVkdRNnZuV0NhMVhJUnB3YXE0T0xZZGRiVDdCVDk5U2l5VjlHbDloUGFOTUlqOHBMRXYxZFl2WjcwVDVURTkybUx3a2JxWk9qTzJacExXWEJrNUROekxLcWdmdVMxcDMtR3VEb01DNmxIZEF5cXFXN3dlSTBjM3VKMDE1UTZ5M2V2eUM5Mk0?oc=5",
       "title": "Giant crowds force Swatch stores to close during 'Royal Pop' pocket watch launch - ABC7 Eyewitness News",
@@ -1436,375 +1805,6 @@
       "publishedISO": "2026-06-04T15:59:06.000Z",
       "summary": "",
       "discoveredISO": "2026-06-06T08:46:49.616Z"
-    },
-    {
-      "url": "https://news.google.com/rss/articles/CBMifEFVX3lxTE1HZjhNbEw5TjhoZllIb3RqcV9xRWdWUXQ0aXN3VTA2cS1ybzhqTTZIQjJ2RWphTjJYbDlVTUlabDAxSGRSYmp1VFBCN09sXzdyb3RsR3hBSWZzVjl6VW9qT1VsTlR3aFUxQWNZejlEd3FlMFh6c0tZMk9JcXM?oc=5",
-      "title": "JCK Take 3: Bruce Bridges, Royal Pop, RJC - jckonline.com",
-      "source": "jckonline.com",
-      "type": "article",
-      "publishedISO": "2026-05-27T23:07:34.000Z",
-      "summary": "",
-      "discoveredISO": "2026-06-06T08:46:49.616Z"
-    },
-    {
-      "url": "https://news.google.com/rss/articles/CBMi7gFBVV95cUxOb08ycV85Z1dsX3o2NUJ1WVdTZS1iV1YtaHk2ZTRzdWRKd1pRLUEzd0JDaXR5bzJKZnlWa205QTg4U1BhdUdmbFduLWIwVDlsWGFwMTFZQTAxcWF1b0lweGQyMEJjWDdqcVhLZXFkTVM4d0M3TzJFak1VdzBLTlJ1akVuVzNaOFJGdHA1NXdOSUYydFZaalpZdkxzX04yZm02UlhIUFdyMWhuYU5qSlJvNERVOGZrM1JFV0ZadjJ6bUZ1QTljcWxOWk5LRTBWQllsREpoNFEtUVdQNEdNb21xaVBUOThNQUVqN1NoQ3JR?oc=5",
-      "title": "Royal Pop resale frenzy sees £335 watch listed for £1,530 - MSN",
-      "source": "MSN",
-      "type": "article",
-      "publishedISO": "2026-05-13T07:00:00.000Z",
-      "summary": "",
-      "discoveredISO": "2026-06-06T08:46:49.616Z"
-    },
-    {
-      "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxNNkRQcGVxSWhqeE15aXJKVUdSOTFuR1VXMC1oV3Fya1llSktWZ1U5dWc0MWQxR2lzM0FFTzdEbHBLZmhFWmxnNE4zVVFwc3UwVkhHOUgyeW5wUVZBZ09BMnVkcU5HSWRZRjFDUjE0Zkw4Nmg0UU5kak85TjR5LWp5T0tvMUFyNjVfeFdSOTRmSnNnQUJTaEZEX1NfUQ?oc=5",
-      "title": "Delugs Is Developing a Wrist Strap for the Swatch x AP Royal Pop - The Gadgeteer",
-      "source": "The Gadgeteer",
-      "type": "article",
-      "publishedISO": "2026-05-14T07:00:00.000Z",
-      "summary": "",
-      "discoveredISO": "2026-06-06T08:46:49.616Z"
-    },
-    {
-      "url": "https://news.google.com/rss/articles/CBMie0FVX3lxTE5aeHdkNEdZOFViMmZJOGRiOUtINkZCaDFJNmtRcklTdEVDRGZPSGVjYjVOaXRIbVlERndMOVVkY2hXaERfUDdNQUV4bzgtbmRXUlRnMjdlLUFIS3pnUzBYUzZKZHZDellaOGxyUGZ1QVRJZkFwUGJfMF9HTQ?oc=5",
-      "title": "The $400 Audemars Piguet x Swatch Everyone’s Talking About - Men's Journal",
-      "source": "Men's Journal",
-      "type": "article",
-      "publishedISO": "2026-05-13T07:00:00.000Z",
-      "summary": "",
-      "discoveredISO": "2026-06-06T08:46:49.616Z"
-    },
-    {
-      "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTFAtMlZDM2dBUzhicnJqNlJUNUVXd0xUTFdMYjhMZGc5MVhDNWplc0hGVlFzMUxkeEZ0WDE1WkVrUzgwVTNFNVVqWUlMQUY1Szh0QUNraVdhaWhOQQ?oc=5",
-      "title": "What is the Royal Pop pocket watch and is it worth the hype? - BBC",
-      "source": "BBC",
-      "type": "article",
-      "publishedISO": "2026-05-18T07:00:00.000Z",
-      "summary": "",
-      "discoveredISO": "2026-06-05T10:16:50.311Z"
-    },
-    {
-      "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE01eTlEbFFhREFPODNoZFFnQkFMdVpJMTI1NkR1TUNyeTRwcEdrX0toTkpiUGk2VWIzSWFyQy1Wa21nbEtfalM2dEFUR25WQ2JNSzZiazg1MVMyY2s?oc=5",
-      "title": "The Audemars Piguet X Swatch Royal Pop Collab Madness 911 Nashville (X03JmDws9L) - Mshale",
-      "source": "Mshale",
-      "type": "article",
-      "publishedISO": "2026-06-05T03:49:13.000Z",
-      "summary": "",
-      "discoveredISO": "2026-06-05T10:16:50.311Z"
-    },
-    {
-      "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxNN2JFeWI1dk8wWFpkeVJXRlZJYnRzWEJWWldUY3NTV3BSaGE1ZUUwanhfMTllQUIzY2NNZ3hhYmJpVUZHMDhta25CU0tyd1hPMXJFRERRNHloT1Q2VVlodkI0eHpSRGlWMEluVmhpNWRXOFdwQ0IzaUNaVHpZQVBDVDR4eUctNHE0TjBxWE5TN0p2N1haREYwY2c5ZmhvQQ?oc=5",
-      "title": "Hands-on Review: The AP x Swatch ‘Royal Pop’ - Esquire",
-      "source": "Esquire",
-      "type": "article",
-      "publishedISO": "2026-05-26T07:00:00.000Z",
-      "summary": "",
-      "discoveredISO": "2026-06-05T10:16:50.311Z"
-    },
-    {
-      "url": "https://news.google.com/rss/articles/CBMizwFBVV95cUxOalJkWVdXMXBSUnZjYnoxTGpsNW55QldUVHJFdzlPaTF4SFhfNFduaFg2TGxYczB2QkhBb3dnMlNyZ0I0djVfS2R4cHJaNzcyX3FtWklsNFVEWVNtN1ZmRzZVTTlNcWxsUzNnTktpZ0xIYUVnaFRDV1BSaG94d1MyeEVWRUJ4OE1RZ3djbXdYWFdCaDdhb3hEMWVrTFhUT21SbmNhenFleUVXUTI4aDdtbzhtQ1pZTnJldmdHV1NqZ2lLNE5ZTW9XWkdHV2cxaGs?oc=5",
-      "title": "Business News Royal Pop Sales Resume After Launch Rush For Audemars Piguet X Swatch Collaboration Forced Store Closures - Hodinkee",
-      "source": "Hodinkee",
-      "type": "article",
-      "publishedISO": "2026-05-18T07:00:00.000Z",
-      "summary": "",
-      "discoveredISO": "2026-06-05T10:16:50.311Z"
-    },
-    {
-      "url": "https://news.google.com/rss/articles/CBMiekFVX3lxTFBQbkVmeGhmR2w3aVA2ZVU3VTIybGlNY1V5Smd5eDhfOUJ6Xy1OSEs2MklhV0M5Z0NFWm14SFY4NWw0bF9uWWhZVDBiUjVleU1RcHVRWmx3RGt5cHVfVGhrSU1lOElkSWpLSGJrQ0JXWW13cG9ZTjVCSWNB?oc=5",
-      "title": "AP × Swatch “Royal Pop” release sparks massive crowds and days-long lines worldwide - amNewYork",
-      "source": "amNewYork",
-      "type": "article",
-      "publishedISO": "2026-05-18T07:00:00.000Z",
-      "summary": "",
-      "discoveredISO": "2026-06-05T10:16:50.311Z"
-    },
-    {
-      "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxQMVRYRXFhOHZ2ZGtaUExJdVEwOVJEMzUzbUQyVXZDUjRENkJZczJ5VEQ1cnk2U0tEWDBpc2FwUDFsX05waXBoc1NxMThQR0pKQmREM0huZUJQSkhTakNzZnFndWh6Nkk5Z05vcExFamQ4NUh3dnBHT0dTNzhHV2c5NWtEVVRFdw?oc=5",
-      "title": "Here’s Your First Look at the Swatch x Audemars Piguet Royal Pop - GQ",
-      "source": "GQ",
-      "type": "article",
-      "publishedISO": "2026-05-12T07:00:00.000Z",
-      "summary": "",
-      "discoveredISO": "2026-06-05T10:16:50.311Z"
-    },
-    {
-      "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxNZzA1V3k0X2pfTlpRLXY4cExMOFhON1ZJOTVYNjZPclJEWmJvY096eXVnQVoxcnhjZElxSTJkNURPZXByTEE0UE1paHVNZE53WGRLdUdXSDBaMV9DUU5URmtnVThjTVVWLVhWemhuZGpvWFhNcGlPNVRpLURsdC1HSHRPMTFKVF9ZM2cyTmVBemxKcXhlQmd3SEVEQWRCZFVwOXc?oc=5",
-      "title": "Swatch released the ‘Royal Pop’ timepiece and captured the zeitgeist - The Washington Post",
-      "source": "The Washington Post",
-      "type": "article",
-      "publishedISO": "2026-05-18T07:00:00.000Z",
-      "summary": "",
-      "discoveredISO": "2026-06-05T10:16:50.311Z"
-    },
-    {
-      "url": "https://news.google.com/rss/articles/CBMifkFVX3lxTE5iSWpiaW9CdWxIUUJzRTNpZnJwbDFBcWZNUVFzSEx5NnNxcEFqQzFXcC0xcHVCWjUyYi1vLVNrbHV0bHJiQ3d3SFFmWXducmVrLWI3d05GWjV5UGU3V2tlT0VxNEF1SDI5NTBtVGhkanFjOWxJVElRLTlvc3NmQQ?oc=5",
-      "title": "Swatch x Audemars Piguet Royal Pop prices show remarkable resilience - WatchPro",
-      "source": "WatchPro",
-      "type": "article",
-      "publishedISO": "2026-05-26T07:00:00.000Z",
-      "summary": "",
-      "discoveredISO": "2026-06-05T10:16:50.311Z"
-    },
-    {
-      "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE5EQzlyQ1gyQnUzZGNpOTk4bko1X3BzR0ZQcmcwZWppVTgtN2REcXJrN2lQc045OXV0eUt1akJycGlEcUNYeWsxUWtGakpOY0F2VW1ZTEctWjdTQjA?oc=5",
-      "title": "Swatch X AP Royal Pop Is Causing CHAOS Already! Usyk Vs Rico (UWY1pL8t5Z) - Mshale",
-      "source": "Mshale",
-      "type": "article",
-      "publishedISO": "2026-05-30T23:02:34.000Z",
-      "summary": "",
-      "discoveredISO": "2026-06-05T10:16:50.311Z"
-    },
-    {
-      "url": "https://news.google.com/rss/articles/CBMi3gFBVV95cUxNSDhONGNOTFBQZ3pZbF9DTUJIUE5SZGJuQzNiaFJKaTlIV0RsYW1OQWI2UzdCdzhYaGhhR3k1ZTBWV213YVFPc0FaX0F6WWdEbVh1YmZscm1GaGtmb1RYbWVtTEF1ZlZHSjA3VW9DT1k0S1ZKMGM3TFlHaUVTOUlCYU93RThQTXNncUhXeHUzcUozNXMzYTdSaDY1ei1uaDlYZktTb0tLSFZMWGdOaUlJWHBVTHd6Y2o5ODJKSmt2c2FJanAwQVJKVnlaRk54Vm9ROFpVN015c3FKZGFlcWfSAd4BQVVfeXFMTmhENGVGZzA5N3F6OGJwclpjQ1QxVklBa21rVUIxNVRNSVVhMW1PMWF3YVR3OHRoOTE5Rm1xdlk3UnZUVHFOQVo3NlJnUXk5cHBUeTJOelVPZXdnaTEzWmtFb1hlZnlUY2djSm5sa1NrY01uelR2UVh6V3p4MUdVMkZGQVdiYUw2eEVvN3Nvd2ZvUnJ4UzJWQVRSYlpzbFdsdEJRNWRadEJaNVQxSW1KcGJfc2Q3ZEVmdktNTDhTWGJIVHpqSHZTbnBfRDNqb1pYVDJhSUhHdW8wUW52cmpB?oc=5",
-      "title": "Style Edit: Swatch and Audemars Piguet unveil Royal Pop pocket watches - South China Morning Post",
-      "source": "South China Morning Post",
-      "type": "article",
-      "publishedISO": "2026-05-19T07:00:00.000Z",
-      "summary": "",
-      "discoveredISO": "2026-06-05T10:16:50.311Z"
-    },
-    {
-      "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE9CamNxZG44dDk1LWlEYTJ1V1NnYk9Wc2xQVE9oWlotYXFrV2Q3SW9NaTJwZjNKeVFOQ1RncHRPX2x5YTMyLTRDeUZQOXhMUFFUM1lCb0ZJSUlTYm8?oc=5",
-      "title": "This $300 Watch Looks Like $50,000 😳 #APxSwatch #SwatchAP #AudemarsPiguet #RoyalPop #SwatchxAP Bet365 (NSehG16a4w) - Mshale",
-      "source": "Mshale",
-      "type": "article",
-      "publishedISO": "2026-05-30T11:22:07.000Z",
-      "summary": "",
-      "discoveredISO": "2026-06-05T10:16:50.311Z"
-    },
-    {
-      "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxPQXgwd0VMdE10Qzg1aHpobm1ISThrUFFoX0FoLU1KRFVySE9TT0RRcXQ2d3QyMFk3WEo0anhWREpWdGJ1cmZBUEdVSmhRNW1yLXdxRFNnUXh6Zm5hbF93am5ILXUyY2RWMkRtRUNYWlBxM0ZBcnlTLTl0VzduanFTaERkUFY4dy10SGNRTTJPaF9iN1hEbnZ4dmhKb2tEcVhHTF9NaW9R?oc=5",
-      "title": "Commentary: AP x Swatch Royal Pop collection - When a launch brings crowds and chaos, it is a marketing disaster - CNA",
-      "source": "CNA",
-      "type": "article",
-      "publishedISO": "2026-05-27T07:00:00.000Z",
-      "summary": "",
-      "discoveredISO": "2026-06-05T10:16:50.311Z"
-    },
-    {
-      "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxQcGxScEVfTjVHX184ZXlKT0Y3UUl4TExBTEoyVS1GVjQzLUlsX2tnUHhpMzZndTBVMzdOWUdnS25lQXViWEVzMmF0TWliTU1GTl9RUVViOTA4Z2VkUUpyeVBIaEFNMzRaMEVWZEUyYWZyMGZTaFkzMFVPOE82UDczSzc2dkdYUUVKNWhEYnBCd1laUVE3WnNGN09mdENXYXIzY2pSRG81eHlaQTJzRWhjdGxn?oc=5",
-      "title": "Audemars Piguet CEO Resta says Swatch tie-up smashed web records - FashionNetwork USA",
-      "source": "FashionNetwork USA",
-      "type": "article",
-      "publishedISO": "2026-05-26T14:26:28.000Z",
-      "summary": "",
-      "discoveredISO": "2026-06-05T10:16:50.311Z"
-    },
-    {
-      "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE95QW5QSHpYQTBlNnRKOWhyeDZsX3RMWXpscUFkTkhWR3ZsaGRGMW10Y0xmM3lTUnJCV3Z2MEJrYjNmQks3akNaSjlxeGtQQ1B4OWNBMEdxdktPaDI1WjFWY19vWkt3SHI4T2Nla05ndFVLa3N4VE1NWUZCdHcxWkk?oc=5",
-      "title": "Swatch’s Audemars Piguet “Royal Pop” Just Passed Peak MoonSwatch Demand - Yahoo Life UK",
-      "source": "Yahoo Life UK",
-      "type": "article",
-      "publishedISO": "2026-05-22T07:00:00.000Z",
-      "summary": "",
-      "discoveredISO": "2026-06-05T10:16:50.311Z"
-    },
-    {
-      "url": "https://news.google.com/rss/articles/CBMieEFVX3lxTE9fWTZpeWVYb2VGd2xPZkxKdVF0S0VsV0l0YTJYVnFBRXBkOGFNb1dfcktlSkcwRDVHZXlxOTJWdXlYYlVKTjI2ZDJvbkRZa3ppVlhGY083VVhlbGsyd2JmMjRNQ0liS1BxRXlESm13UVNQMkROLWYySg?oc=5",
-      "title": "Did Audemars Piguet Cheapen Its Brand By Collaborating With Swatch? - Huddle Up | Joe Pompliano",
-      "source": "Huddle Up | Joe Pompliano",
-      "type": "article",
-      "publishedISO": "2026-05-19T18:51:29.000Z",
-      "summary": "",
-      "discoveredISO": "2026-06-05T10:16:50.311Z"
-    },
-    {
-      "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxQUHJNSDdieE9lSW8tVllza2VqaUQ4d25jaE9OWHRfaVQxQzUzb2pfSTlfTHhXZm9lZUdjc3A3cWdTd0NCMS1UNHNGUTl5X0hxUVl3cTVVckh0dnhwMDlSYVlUOTFoeTNwdC1xS3hDTTFuM2pUejQ2M0tYWFdZekZpMXBBLS1mTElESWdqM1hjd3RvVmVyQVR1NDVxR2ItMFFJdTJZ?oc=5",
-      "title": "Royal Pop watch won't return to Swatch stores for now after chaos at Netherlands outlets - NL Times",
-      "source": "NL Times",
-      "type": "article",
-      "publishedISO": "2026-05-19T07:00:00.000Z",
-      "summary": "",
-      "discoveredISO": "2026-06-05T10:16:50.311Z"
-    },
-    {
-      "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxPOVlOZTl1RHh6cWFMMkhldElQT3ZZbHdrM2h6NzZqbHUyRXUtVVdQQWUyZWNKUVJZcFctcHhJa2hlUXc3NGZWVl9mMHZuT1k5ZUJrWTByM3JDaGZzd1Nkd3RxbDZVc1lxN2JrT2wwR1lGQVpSTlVXZDFTTHhHR2x3aEFycnhDZzg2UWNWRTcxaVl2MENKZFNyeg?oc=5",
-      "title": "Audemars Piguet and Swatch's new pocket watch collab has fans camping outside stores for days - Business Insider",
-      "source": "Business Insider",
-      "type": "article",
-      "publishedISO": "2026-05-14T07:00:00.000Z",
-      "summary": "",
-      "discoveredISO": "2026-06-05T10:16:50.311Z"
-    },
-    {
-      "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE5hZjZPVE92RlUwNUNTVGN2SnBoMF9xWWlvNW9OWlhfamo2dWx4cVFRR0U2WWJaUUhHMFdYd280RDVTeER3R1Nrd1NqTTNyTUJhR1IzTnNFTm1KdmV1YU1KSEVSS0Y?oc=5",
-      "title": "Up Close With the Audemars Piguet x Swatch Collab That No One Saw Coming (EXCLUSIVE) - Highsnobiety",
-      "source": "Highsnobiety",
-      "type": "article",
-      "publishedISO": "2026-06-02T07:15:00.000Z",
-      "summary": "",
-      "discoveredISO": "2026-06-05T10:16:50.311Z"
-    },
-    {
-      "url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxNal9YZVdWMTZwRVVwd1NWSGVReDdlbkd3cGNRc2l5MV9QR010cUc0a2FJSlplUy0wOXlZVl9tR1FIWFRGWGNxUS1zblFwREJNdTAydnoteWpVQ2hReV9zYzA0aE1xTnN4QXRCZEJmdXNaYkNuZ0UxZ3pPdGhDZS1zNTVfQ3BsdEh6Y2VHcHFHQnRMU3lHazlYMlRTUzJTNF9jV1FzOXp1Y1VuTnZUM0ZhYW1Bak13R1FHV1FZMnRBYk9SaS1xQzdUSVh5VUdIeTQx?oc=5",
-      "title": "Why Audemars Piguet’s Swatch Collaboration Is Dividing The Watch Industry - Forbes",
-      "source": "Forbes",
-      "type": "article",
-      "publishedISO": "2026-05-15T07:00:00.000Z",
-      "summary": "",
-      "discoveredISO": "2026-06-05T10:16:50.311Z"
-    },
-    {
-      "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxQdHFBMnY4YVhlNkdWMkZWOTJJWlpGemdFZG5ZRGpvc1hsNk9qaHlFNmhEbW9RSWxDXzV3RUk4WmFBZXVjU1RyalAzVi0zMTIyZ05ENGxZUHRPTEFRRE95bUVIcVAwTWZHUkpyaGFoS2pMRnVZVE1BQS1KQmhSdXp5N3pDRnJ6UGxJZ28yX2M5UXRjZW5TWkN5NV9zbGtzTXZ0VEFqZWduSEMtYktxVUdXSw?oc=5",
-      "title": "The AP x Swatch Watch Is Now Listing for Thousands Online After In-Store Chaos - Robb Report",
-      "source": "Robb Report",
-      "type": "article",
-      "publishedISO": "2026-05-18T07:00:00.000Z",
-      "summary": "",
-      "discoveredISO": "2026-06-05T10:16:50.311Z"
-    },
-    {
-      "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxNd1hFbF8zY2s0Z3p2aXVFUk01OWQ4QlBiNEQ5bkZ4YjZ3QWE3Vlh4MjJGT3M1d3J3bGY0ZG12RWtJejU3aDBfeXJPazJjbHR5eGhINHdqNk9VbE9GUml6T2hGSkpWSDZyRXcxYUdSd1RpSkNKbkFrX2R2Z3ZuUHI5QkdhYmZCZi1tMEc4dkxmam9rQWhKLTUydTRoamJURzg2Vjc4?oc=5",
-      "title": "AI Promised the Audemars Piguet x Swatch Wristwatch. China Will Deliver It - WIRED",
-      "source": "WIRED",
-      "type": "article",
-      "publishedISO": "2026-05-14T07:00:00.000Z",
-      "summary": "",
-      "discoveredISO": "2026-06-05T10:16:50.311Z"
-    },
-    {
-      "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxPYU1Ta2pBNkdaYW5VcGpDM01pbl81UjFOVFdxNE41TksxQ0tQVUhrVU1oVzRiclF3UHlBcDQ2SUNlQnpoXzBFVTNnSlBHUkZhN3lkZkV6SFFYTFZOSTZSMENYZlhOQm9lR2VkNm9hWmNRN1JMTnVVMjN5dXBpenJZa3Azam1IeWdtbHVDMzdXZW5sVXM?oc=5",
-      "title": "Audemars Piguet x Swatch Ditches the Wrist With Colourful Bioceramic Pocket Watches - Man of Many",
-      "source": "Man of Many",
-      "type": "article",
-      "publishedISO": "2026-05-13T07:00:00.000Z",
-      "summary": "",
-      "discoveredISO": "2026-06-05T10:16:50.311Z"
-    },
-    {
-      "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTFBQamJNd1E2YXRJTFJLcXBtSU84b2VaTHNOZWg3X0p6SzZNS0xETWx1dlg4TmRRSEk4YkRRSGdvUWVUbVlUb21taFFyU1NqZlBuZkZZdDZ2RUVZcWRyV0xUVUFqeHdpVHJrZWRtZGFSYlA?oc=5",
-      "title": "We Got on Line for the Swatch x Audemars Piguet Collaboration - New York Magazine",
-      "source": "New York Magazine",
-      "type": "article",
-      "publishedISO": "2026-05-15T07:00:00.000Z",
-      "summary": "",
-      "discoveredISO": "2026-06-05T10:16:50.311Z"
-    },
-    {
-      "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxQaEQybm90MzM5RWJtVWRxRFhuVE9HM1ZQbFpBSjhRYkxwYUdDVTZlbmVzOXRxVmRJeVFTdzhjRV9Wc1FZSHYyTTFUU0VrZmE4NEFZUDVjblh1bUttdXpKWGZpeEtXVWhDOW1MNHBiRklmMU5jUXFIQlR2eEY1QkQwaEhRTktSSU83R2lLb1ZETXN1R3BKSnhrWjBiVUF0akpwWEJnZW1GQThEUQ?oc=5",
-      "title": "A Look at the Full AP x Swatch ‘Royal Pop’ Collection - Esquire",
-      "source": "Esquire",
-      "type": "article",
-      "publishedISO": "2026-05-12T07:00:00.000Z",
-      "summary": "",
-      "discoveredISO": "2026-06-05T10:16:50.311Z"
-    },
-    {
-      "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxQLUwtRTc1cUFiN1VVUmIydWxiejdYWVBtYUdpWGYxbE9UdVM2RVoyWnVCVGJOX1FaZGVVclpRLTdWS0ZFVFJqQndRQ2FuLXhkX1JTUjhXa29SdVFzS282WUw5VkRXT3NfUUptbGNVeDRjT19nTGowSDZDYWpDbnJoZGVvZHZTSE9Ua21Nb2dURkN3bVkwd0ZxT2YzR09pNHpRYkdxcDk5SklBSXlmTHk3MWJXVWpPZzA?oc=5",
-      "title": "Swatch Shuts Stores After Audemars Piguet Collaboration Sparks Frenzy - The Business of Fashion",
-      "source": "The Business of Fashion",
-      "type": "article",
-      "publishedISO": "2026-05-17T07:00:00.000Z",
-      "summary": "",
-      "discoveredISO": "2026-06-05T10:16:50.311Z"
-    },
-    {
-      "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxNSlFyYmZHeFFGN2JCQVd3b2UzQWVvQnJCUWotNzJNR0h1SWlfWEhFSXpzR3A3LTdOQ2wyd3AweFlRdV83cnIwaXFFWDBRY3B1cUptd29MM2dHQld3dVNHV1EyUGM5YlN1dzdJdG84eC0wcXIzbnlmeGJuRWxVRGpsOEZhdl92c2FDYzRVXzcyMmF5SC1qSjZQRTN4dnBaUkE?oc=5",
-      "title": "What Is the Audemars Piguet x Swatch ‘Royal Pop’ Watch? Breaking Down the New Collab Clues. - Esquire",
-      "source": "Esquire",
-      "type": "article",
-      "publishedISO": "2026-05-09T07:00:00.000Z",
-      "summary": "",
-      "discoveredISO": "2026-06-05T10:16:50.311Z"
-    },
-    {
-      "url": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxNb3VxR3lGM3lYZExXQmVoTW85anlEOTlZX3ZLQTlYdzZ5dmNoVDdIVVFXcURjcnpFaTYzczhyWHlBT1VQdDhfcEJwSHFVYldoUEJzMnpScmdZN3ViSmRocy1Xd25ucGxIVXpSZWpmakttb2ktcGdKSG1yYkxPVXNlenl0QlVmX1RJX0NLdjVpZHotS1hhTEUzYVF4ZGxIWEpJMU4zc05NelZTSnloRzhPelp2T09ab1hpZDVvX0RfZjhIa0lFOUlVdUYtdDF2MEN6bzlZOQ?oc=5",
-      "title": "People camp outside Houston Galleria for limited Swatch, Audemars Piguet watch release - Click2Houston",
-      "source": "Click2Houston",
-      "type": "article",
-      "publishedISO": "2026-05-14T07:00:00.000Z",
-      "summary": "",
-      "discoveredISO": "2026-06-05T10:16:50.311Z"
-    },
-    {
-      "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxPSy1JcU1BVUlTNl9BTHVQbi01UGZEYXJGZTZ0TVozYjdqV3M1RjZDWXBzWGNER1RoMzhfSzJNQUhmS0czcGZlUnpVUDR4ZGM2RXBYNkgtTml6VmlNRk9Gb25MOWdHbElBdHdwZEMxQ1B0cnRvQW1FeTk0UVFUUVBaYm1QaGNfQlZTc0tvbGMtc1g2UFptNld5cnVqNDBQdw?oc=5",
-      "title": "The watch world is split over Audemars Piguet's Swatch collab: It's like a 'Ferrari Civic' - Business Insider",
-      "source": "Business Insider",
-      "type": "article",
-      "publishedISO": "2026-05-11T07:00:00.000Z",
-      "summary": "",
-      "discoveredISO": "2026-06-05T10:16:50.311Z"
-    },
-    {
-      "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxNZ19fVFgtVHQ0U0Jwbm15bE1tZnpkY213Z2xlSWRXSzZYWUNiaW5yTkRDc3UtSnZySjllem4tZ1JVSUtwNkw4ZkdZb3o1a2JGNlN2UzlQZnlPSUpUYVdSYnl6b254bXczNTVsNF9sN1BhQnBkaVZQQU91c1lBWF80V1V6M3kzQ1E4eGE5eFR5cFQySi1Rd1Uw?oc=5",
-      "title": "Swatch stores cancel Audemars Piguet-Swatch sale as crowds surge - Jing Daily",
-      "source": "Jing Daily",
-      "type": "article",
-      "publishedISO": "2026-05-24T10:23:20.000Z",
-      "summary": "",
-      "discoveredISO": "2026-06-05T10:16:50.311Z"
-    },
-    {
-      "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxPeTdJNmJPSVVMRE0zVTA0MEIxRXBNb1NDWXdxNHkwT3dRNDZKMUNYZ3BodjhmVjExb2VCTmUzbVZ1NzhWM1Nlc1EwUWRybjBXNWRYbUJoQVY1QWdQT2g4SU11Q2p5NHBUTXc2aEFMT0UyYU5kaWNFZElMMndLM0o3Ylc2RjhiWnhqa2ZWWTN3VldTbWV6aDhYbUY1eHBrblE5bzNKSjBTXzhBOE9ZUG5IWg?oc=5",
-      "title": "Swatch x AP Royal Pop Brought Crowds, Closures And Chaos - Forbes",
-      "source": "Forbes",
-      "type": "article",
-      "publishedISO": "2026-05-18T07:00:00.000Z",
-      "summary": "",
-      "discoveredISO": "2026-06-05T10:16:50.311Z"
-    },
-    {
-      "url": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxNTVdMemNJU3I4Y19URVpNclR6WDFsMXRud3R4cG12S3pKRktaRHNBN3A5emdWQ2NhdFZiMXZMMlcxZ01Jc2U0NFNoWDNMMmt3NEVWaHpYdHNvSWVqWVBzYl9uMVV1QWVCcFZ0RWlSbkFMWDJ5VURJQ1QydlRmQm8tRDhfbHlQdXhieDkyLW16SHNjcTJXQ3VDcGdJQzhZMGRQdDQzYVdLd3RGa19nNlA4VHIweW5tQnRPbE12UDNpNE1CVk5LQ0Y1cjFwTFdJc2ctMHZXclhIZG1VdDlR?oc=5",
-      "title": "AP x Swatch 'Royal Pop' watch straps: The brand to trust and buy from, according to experts - MSN",
-      "source": "MSN",
-      "type": "article",
-      "publishedISO": "2026-06-03T13:50:13.000Z",
-      "summary": "",
-      "discoveredISO": "2026-06-05T10:16:50.311Z"
-    },
-    {
-      "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE5HQ0VPYlR4WF9PUGdXUHY2emktMTliZlBsNDhDVzc1VTJGUGxFa1NyakhXVFQzek9MTDZSckFzNVF6YkI0TU5vdjVLcUJRZkZrdnptNW41YzFVX1JfdUE2ckgwUUllR09vUjk3WXNkQQ?oc=5",
-      "title": "Prices for Swatch x Audemars Piguet ‘Royal Pop’ Have Crashed - Man of Many",
-      "source": "Man of Many",
-      "type": "article",
-      "publishedISO": "2026-06-02T12:38:25.000Z",
-      "summary": "",
-      "discoveredISO": "2026-06-04T10:12:32.489Z"
-    },
-    {
-      "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxOcEFxMnQyLTBMY1dhSlc2MEprQzZoSkt2OG1yb0NvWFlrcHE0bzJyRG5lNTdzcXpnSl9ER1RSQmZHdEs0OW9PU1ZhUUJUTWk3ZXNHZ3o3UkRLb3VPcnpxaVZJSWhUUE12V2hPRkhjOTV5UERfR19VMTdiNWpDN1k1djhiREZqUUF0cHow?oc=5",
-      "title": "Swatch 'Royal Pop' collaboration with Audemars Piguet causes chaos at US retailers - AOL.com",
-      "source": "AOL.com",
-      "type": "article",
-      "publishedISO": "2026-06-03T22:15:11.000Z",
-      "summary": "",
-      "discoveredISO": "2026-06-04T10:12:32.489Z"
-    },
-    {
-      "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE5TdThHNnV4aFJxRElSR2w1VjdRU2w4a2hvLTI0Y0ZiNDVqREVwUXpMYlRZYnppcFlPdnZPME9IeDRXcWJkNHRvQzVLR3dxTUNxWEVManN2NFZ4X293bWJnTExwbmFIYVVGajlXMHUtMW1LY2pIQk9jSnlqTGhCdU0?oc=5",
-      "title": "A \"Failed Launch\"? Swatch Encounters Chaos on Royal Pop Release Day - jckonline.com",
-      "source": "jckonline.com",
-      "type": "article",
-      "publishedISO": "2026-05-18T17:58:35.000Z",
-      "summary": "",
-      "discoveredISO": "2026-06-04T10:12:32.489Z"
-    },
-    {
-      "url": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxNRmV1VjdmeTlrM0N6bUpoUGllejJhcTc2UFBOcHhkN29kWkZ1Z2hSdzM4QWxoRjRtdUw4N0Y1U3dNZ3ZsMkJpa1djYWtueFdOS0htUzFsQkVJdXU4ckZLbDhWYVlPcHFrRFpHYlBaYkxhTm5ESlVhN3dPejFTbmZUWGdOLWFMYnNUUmFpdkw1SHRRYU9GRmFKN0o4VEstTVE1eFZVVkh2VEdaOTJ4UjlrSE9JNWJCYlU5ZlVCWVBEdjB3OXVlNWpjajJzQUQwOXktX1NHcg?oc=5",
-      "title": "Audemars Piguet and Swatch unveil the Royal Pop collection - The Detroit News",
-      "source": "The Detroit News",
-      "type": "article",
-      "publishedISO": "2026-05-16T07:00:00.000Z",
-      "summary": "",
-      "discoveredISO": "2026-06-04T10:12:32.489Z"
-    },
-    {
-      "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxPaHhvRTdUSVdEMnpLMk1pb2g1REh5eVRtQlBPTF9fMmN0Z2VWVjRsRVZrZVhrYmF5T1hOYmZiN0NaZl81N3NCQXdkVjVaOVlxSUlWWTFOX1NyZkRGOU5mNEJOYlNCT0c2LWhsMDFIMzVaMXpjak5USXlZVVNrbGdndGpGV3gxVmVaRXgyb0hJc3J4d0ZBSXl2RXpXc1VoSURCV2ZIWUNsTGV5ZEhnbml6bnlfRjhjUlZwc3NjYldGSjhvZEkxWVM4?oc=5",
-      "title": "Audemars Piguet x Swatch 'Royal Pop' release sparks mob scenes, pepper spray and arrests at malls | OutKick - Fox News",
-      "source": "Fox News",
-      "type": "article",
-      "publishedISO": "2026-05-18T07:00:00.000Z",
-      "summary": "",
-      "discoveredISO": "2026-06-04T10:12:32.489Z"
-    },
-    {
-      "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxQUS1xWER6cmlLN0VvSWtMQVFIbkN6bHN5WGlLMEZYX3ZyS282dG9KWWgwekpQdFdOZXlBNzBGblNhN1FYQk81ZFlMemt0ZU5uWDYyYzU5YV83WEx6VHFWN2FMN25LTDQyeEF2MDRXcGlVenhXd3JCNWlHNkt2dC1vSGNaRGVYRTBqcVBzMlhBYUk?oc=5",
-      "title": "AP Says the Swatch ‘Royal Pop’ Is a One-Off - Esquire",
-      "source": "Esquire",
-      "type": "article",
-      "publishedISO": "2026-05-19T07:00:00.000Z",
-      "summary": "",
-      "discoveredISO": "2026-06-04T10:12:32.489Z"
     }
   ]
 }
