@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { colorways } from "../data/colorways";
 import { strapCategories } from "../data/strap-categories";
+import NewsletterSignup from "./NewsletterSignup";
 
 export default function Footer() {
   return (
@@ -59,6 +60,9 @@ export default function Footer() {
               <li><Link href="/sitemap" className="hover:text-pop-yellow">Sitemap</Link></li>
             </ul>
           </div>
+        </div>
+        <div className="mt-10 border-t border-paper/15 pt-8">
+          <NewsletterSignup />
         </div>
         <div className="mt-10 flex flex-col gap-3 border-t border-paper/15 pt-6 text-xs text-paper/60 sm:flex-row sm:justify-between">
           <p>© {new Date().getFullYear()} Pop Strap Finder. Independent. Not affiliated with Swatch, Audemars Piguet, or the Royal Oak Pop project.</p>
