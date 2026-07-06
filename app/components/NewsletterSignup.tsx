@@ -4,6 +4,17 @@ import { useState } from "react";
 
 type Status = "idle" | "submitting" | "success" | "error";
 
+/** Signup attribution: current page path plus utm_source/utm_medium/utm_campaign. */
+function currentAttribution() {
+  if (typeof window === "undefined") return { page: "", source: "footer" };
+  const params = new URLSearchParams(window.location.search);
+  const utm = ["utm_source", "utm_medium", "utm_campaign"]
+    .map((key) => params.get(key)?.trim())
+    .filter(Boolean)
+    .join("/");
+  return { page: window.location.pathname, source: utm || "footer" };
+}
+
 export default function NewsletterSignup() {
   const [status, setStatus] = useState<Status>("idle");
   const [email, setEmail] = useState("");
@@ -12,12 +23,15 @@ export default function NewsletterSignup() {
     e.preventDefault();
     setStatus("submitting");
     try {
+      const { page, source } = currentAttribution();
       const res = await fetch("/", {
         method: "POST",
         headers: { "Content-Type": "application/x-www-form-urlencoded" },
         body: new URLSearchParams({
           "form-name": "newsletter",
           email,
+          page,
+          source,
           website: "",
         }).toString(),
       });
@@ -54,6 +68,8 @@ export default function NewsletterSignup() {
             className="mt-3 flex flex-col gap-2 sm:flex-row"
           >
             <input type="hidden" name="form-name" value="newsletter" />
+            <input type="hidden" name="page" value="" />
+            <input type="hidden" name="source" value="footer" />
             <p className="hidden" aria-hidden="true">
               <label>
                 Leave this empty if you&apos;re human:{" "}
