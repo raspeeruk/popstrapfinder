@@ -31,7 +31,7 @@ const mono = JetBrains_Mono({
 export const metadata: Metadata = {
   metadataBase: new URL("https://popstrapfinder.com"),
   title: {
-    default: "Pop Strap Finder — Straps & Accessories for the Swatch × AP Royal Pop",
+    default: "Pop Strap Finder | Royal Pop Straps & Accessories",
     template: "%s | Pop Strap Finder",
   },
   description:
@@ -83,7 +83,7 @@ export default function RootLayout({
   return (
     <html lang="en" className={`${display.variable} ${body.variable} ${mono.variable}`}>
       <head>
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="/icon.svg" type="image/svg+xml" />
         <Script
           id="org-jsonld"
           type="application/ld+json"
