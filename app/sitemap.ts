@@ -7,7 +7,6 @@ export const dynamic = "force-static";
 const BASE = "https://popstrapfinder.com";
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const now = new Date();
   const staticPaths = [
     "",
     "/find",
@@ -28,7 +27,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
 
   const staticEntries = staticPaths.map((p) => ({
     url: `${BASE}${p}`,
-    lastModified: now,
     changeFrequency: (p === "" ? "weekly" : "monthly") as "weekly" | "monthly",
     priority:
       p === ""
@@ -40,14 +38,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
 
   const colorwayEntries = colorways.map((c) => ({
     url: `${BASE}/colors/${c.slug}`,
-    lastModified: now,
     changeFrequency: "weekly" as const,
     priority: 0.95,
   }));
 
   const categoryEntries = strapCategories.map((c) => ({
     url: `${BASE}/straps/${c.slug}`,
-    lastModified: now,
     changeFrequency: "weekly" as const,
     priority: 0.9,
   }));

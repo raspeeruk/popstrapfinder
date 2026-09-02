@@ -22,6 +22,7 @@ export default function FindPage() {
       <section className="border-b-[3px] border-ink py-16">
         <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
           <SectionHeading
+            as="h1"
             eyebrow="Four questions"
             title="Match your Royal Pop to the right strap."
             description="No email required. No account. We don't store your answers."

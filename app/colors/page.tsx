@@ -23,6 +23,7 @@ export default function ColorsIndex() {
       <section className="border-b-[3px] border-ink py-16">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <SectionHeading
+            as="h1"
             eyebrow="Eight cases"
             title="Every Royal Pop colorway."
             description="Each of the eight colorways has its own strap personality. Some are flexible. Some demand specific materials. We've made a page for each."

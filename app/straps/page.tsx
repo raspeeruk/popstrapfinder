@@ -22,6 +22,7 @@ export default function StrapsIndex() {
       <section className="border-b-[3px] border-ink py-16">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <SectionHeading
+            as="h1"
             eyebrow="The strap library"
             title="Every category, ranked."
             description="From $8 NATOs to $200 double-Albert chains — eight strap categories chosen for the Royal Pop's lug system and Bioceramic case."
